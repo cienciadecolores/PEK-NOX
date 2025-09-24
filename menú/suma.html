@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suma Explicada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url(https://dinopixel.com/preload/1121/starsgif_1637488356.gif);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      line-height: 1.8;
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50%;
+    width: 101.5%;
+    margin-top: -20px;
+    background-image: url("C:/Users/HP HOME/Documents/Página web código y ejemplo/index/Crayolas.png");
+    background-position-y:26px;
+    background-position-x: 19px;
+    border-radius: 30px;
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+}
+        header nav a {
+            color: darkred;
+            text-decoration: ;
+            margin: 10px;
+        }
+    .contenedor {
+      max-width: 800px;
+      background: #000;
+      border: 6px solid #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 50px;
+      box-shadow: 0 0 10px #ff0000;
+    }
+    h2 {
+      color: #ffcc00;
+      text-shadow: 2px 2px #ff0000;
+    }
+    .ejemplo-objetos {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    .objeto {
+      width: 30px;
+      height: 30px;
+      background: #00ffcc;
+      border: 3px solid #fff;
+      image-rendering: pixelated;
+    }
+    .signo {
+      font-size: 24px;
+      color: #ffcc00;
+    }
+    .resultado {
+      font-size: 18px;
+      background: #333;
+      padding: 10px;
+      border: 3px solid #fff;
+      border-radius: 6px;
+    }
+    .numeros {
+      font-size: 20px;
+      background: #222;
+      padding: 15px;
+      border: 4px solid #ffcc00;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    .osito {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 150px;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.osito:hover {
+    transform: scale(1.03);
+}
+
+.pixel2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 150px;
+    margin-right: -950px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.pixel2:hover {
+    transform: scale(1.03);
+}
+#backButton {
+    position: absolute;
+    top: 230px;
+    left: 110px;
+    font-family: "Coral Pixels", serif;
+    background-color: black;
+    background: linear-gradient(to right, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid red;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 40px;
+  }
+  #backButton:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  #backButton {
+    background: linear-gradient(to right, reds);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: latido 2s infinite;
+    font-family: "Coral Pixels", serif;
+  }
+  </style>
+</head>
+<body>
+  <button id="backButton" onclick="history.back()"><a href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\números menú.html">Atrás</a></button>
+  <header>
+    <img class="osito" src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo PEK NOX.png" width="150">
+    <img class="pixel2" src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo de mi cole.png" width="150">
+        <nav>
+    </header>
+
+  <div class="contenedor">
+    <h2>📖 Definición</h2>
+    <p>Sumar es juntar dos o más cantidades para obtener un total.</p>
+
+    <h2>🧩 Ejemplo con Objetos</h2>
+    <div class="ejemplo-objetos">
+      <div class="objeto"></div>
+      <div class="objeto"></div>
+      <div class="signo">+</div>
+      <div class="objeto"></div>
+      <div class="signo">=</div>
+      <div class="resultado">3 objetos</div>
+    </div>
+
+    <h2>🔢 Ejemplo con Números</h2>
+    <div class="numeros">
+      2 + 1 = 3
+    </div>
+  </div>
+  
+  <div class="contenedor" style="margin-top:30px;">
+    <h2>🍎 Ejemplo con Dibujos</h2>
+    <p>Si tengo 3 manzanas y me dan 2 más, ¿cuántas tengo en total?</p>
+    <div class="ejemplo-objetos">
+      <span style="font-size:30px;">🍎</span>
+      <span style="font-size:30px;">🍎</span>
+      <span style="font-size:30px;">🍎</span>
+      <div class="signo">+</div>
+      <span style="font-size:30px;">🍎</span>
+      <span style="font-size:30px;">🍎</span>
+      <div class="signo">=</div>
+      <div class="resultado">5 manzanas</div>
+    </div>
+  </div>
+
+  <div class="contenedor" style="margin-top:30px;">
+    <h2>📏 Ejemplo con Recta Numérica</h2>
+    <p>Para resolver 2 + 3, empiezo en el 2 y avanzo 3 pasos:</p>
+    <div style="font-size:22px; background:#111; padding:15px; border:4px solid #ffcc00; border-radius:8px;">
+      0 — 1 — <span style="color:cyan;">2</span> ➡️ <span style="color:lime;">3</span> ➡️ <span style="color:lime;">4</span> ➡️ <span style="color:lime;">5</span>  
+      <br><br>
+      Resultado: <strong>5</strong>
+    </div>
+  </div>
+
+  <div class="contenedor" style="margin-top:30px;">
+  <h2>✍️ ¡Ahora tú!</h2>
+  <p>Resuelve esta suma:</p>
+  
+  <div class="numeros" style="display:flex; align-items:center; gap:10px;">
+    <span id="num1">0</span> 
+    <span>+</span>
+    <span id="num2">0</span>
+    <span>=</span>
+    <input type="number" id="respuesta" style="width:80px; font-size:18px; text-align:center;" placeholder="?">
+    <span id="resultadoCheck" style="font-size:24px; margin-left:10px;"></span>
+  </div>
+  
+  <p style="font-size:14px; color:#ffcc00;">(Escribe la respuesta y mira si es correcta)</p>
+
+  <hr style="margin:20px 0; border:2px solid #ffcc00;">
+
+  <h2>🧮 Calculadora de Sumas</h2>
+  <p>Ingresa hasta 10 números y suma:</p>
+  <div style="display:flex; flex-wrap:wrap; gap:5px; margin-bottom:10px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+    <input type="number" class="calcNum" style="width:60px; padding:3px;">
+  </div>
+  <button onclick="sumarCalculadora()" style="font-size:18px; padding:5px 10px;">Sumar</button>
+  <div id="resultadoCalc" style="margin-top:10px; font-size:20px; font-weight:bold;"></div>
+</div>
+
+<script>
+  let num1, num2;
+
+  function generarSuma() {
+    num1 = Math.floor(Math.random() * 50) + 1;
+    num2 = Math.floor(Math.random() * 50) + 1;
+    document.getElementById("num1").textContent = num1;
+    document.getElementById("num2").textContent = num2;
+    document.getElementById("respuesta").value = "";
+    document.getElementById("resultadoCheck").textContent = "";
+  }
+
+  document.getElementById("respuesta").addEventListener("input", function() {
+    const resp = parseInt(this.value);
+    const check = document.getElementById("resultadoCheck");
+    if (resp === num1 + num2) {
+      check.textContent = "✔️";
+      check.style.color = "lime";
+      setTimeout(generarSuma, 1500);
+    } else if (!isNaN(resp)) {
+      check.textContent = "❌";
+      check.style.color = "red";
+    } else {
+      check.textContent = "";
+    }
+  });
+
+  function sumarCalculadora() {
+    const inputs = document.querySelectorAll(".calcNum");
+    let total = 0;
+    inputs.forEach(inp => {
+      let val = parseInt(inp.value);
+      if (!isNaN(val)) total += val;
+    });
+    document.getElementById("resultadoCalc").textContent = "Resultado: " + total;
+  }
+
+  generarSuma();
+</script>
+
+
+</body>
+</html>

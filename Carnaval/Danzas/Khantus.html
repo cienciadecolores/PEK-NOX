@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khantus</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/b_24017_lesly-oblitas-es-la-tawaqo-2023-representa-a-la-agrupacion-khantus-de-charazani-1 (1).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KHANTUS</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 100px;
+    }
+    .ka {
+        position: relative;
+        left: 20px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS KHANTUS</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfsNJCcWKdIvjCsWtNNxXnBCkdkBh38ZukBQ&s" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1k5CshzW6z9BunKUrvmIn6zTJJ96HDrIGLkgrfTCNTjlr1OvvobANY4EABOwCdDG3nxGUi_ihgvocZs06Oto2_HdQrg8LChOjXV_gOwuQZmgYBihPfsSeMEdaXf57zjCElRrQ6tThJS4/w1200-h630-p-k-no-nu/211250_1_14.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Khantus es una expresión cultural originaria de la región andina de Bolivia, específicamente vinculada a la comunidad aymara. Su historia se remonta a las tradiciones ancestrales de las comunidades indígenas, donde la danza se realizaba como parte de ceremonias de agradecimiento a la Pachamama (Madre Tierra) y para invocar buenas cosechas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPKMagvBDodGSeWAaRYFrBeqvR4EXxyTLoCNegQr2AIRZET4Phu6trnrDOoeILz6fXpTt8L30EcDHqfaT6sFN0GCMx2ydP49vCALpUqtGEjQRAwmXy2ENruLvgivwYcy01UbAwTmvqgBY/s200/folklore.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Khantus representa la conexión de las comunidades andinas con la naturaleza y la importancia de la agricultura en su vida cotidiana. A través de sus movimientos alegres y enérgicos, simboliza la celebración de la vida, la fertilidad de la tierra y el agradecimiento a la Pachamama (Madre Tierra) por las cosechas. Los bailarines, vestidos con trajes coloridos y adornos tradicionales, encarnan el espíritu festivo de la comunidad, resaltando la unidad y la colaboración entre sus miembros. En el contexto de festivales como el Carnaval de Oruro, la danza se convierte en un símbolo de orgullo cultural y resistencia, reflejando la rica herencia indígena y la continuidad de sus tradiciones a lo largo del tiempo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxeQ4YHZTtpsnALNxGc277DdFLiB2alSHkcg&s" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Ñusta: En la danza de los Khantus, la Ñusta representa la figura femenina idealizada de la cultura andina, simbolizando la fertilidad, la belleza y la conexión con la tierra. Este personaje evoca a las mujeres que desempeñan un papel crucial en la vida comunitaria y agrícola, destacando su importancia en la preservación de las tradiciones y el cuidado del hogar. Vestida con trajes coloridos y adornos típicos, la Ñusta danza con gracia y elegancia, reflejando la alegría y la riqueza cultural de la comunidad. Su presencia resalta la fortaleza femenina y la continuidad de las tradiciones a lo largo de las generaciones.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://i.ytimg.com/vi/-vGkJwp838U/maxresdefault.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Pareja Varón-Mujer: En la danza de los Khantus, la pareja varón-mujer simboliza la complementariedad y la unidad entre hombres y mujeres en la vida comunitaria. Ambos personajes realizan movimientos coordinados y enérgicos que reflejan la alegría y la celebración de la cultura andina. La pareja destaca la importancia de la colaboración en las labores agrícolas y en la vida familiar, representando el equilibrio y el trabajo conjunto en la sociedad. Vestidos con trajes tradicionales y coloridos, su danza evoca la conexión con la Pachamama (Madre Tierra) y la riqueza de las tradiciones andinas, enfatizando la celebración de la vida y la identidad cultural.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://i.ytimg.com/vi/u6GlGgUd6ZE/maxresdefault.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Músicos: En la danza de los Khantus, los músicos desempeñan un papel fundamental, proporcionando el ritmo y la melodía que acompañan a los bailarines. Utilizan instrumentos tradicionales andinos como la zampoña, el charango y el bombo, creando un ambiente festivo y alegre. Los músicos no solo son responsables de la música, sino que también representan la herencia cultural y la identidad de la comunidad, manteniendo vivas las tradiciones a través de sus interpretaciones. Su participación es esencial para la celebración y el éxito de la danza, ya que la música es un elemento clave que une a todos los participantes y realza la experiencia del espectáculo.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bailarines_de_khantus_de_Charazani_en_el_Jisk%27a_Anata.jpg/1200px-Bailarines_de_khantus_de_Charazani_en_el_Jisk%27a_Anata.jpg" alt="Personaje 4">
+            <div class="text">
+                <p>
+                   Whipalero: En la danza de los Khantus, el Whipalero simboliza al guerrero y protector de la comunidad. Representa la fortaleza y el valor, vestido con trajes elaborados y adornos significativos. Sus movimientos enérgicos reflejan destreza y habilidad, destacando la importancia de la unidad y la cooperación en la comunidad. Su presencia subraya la conexión entre la identidad cultural y la resiliencia de los pueblos andinos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://i.ytimg.com/vi/VR_JVkTM0_M/hqdefault.jpg" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Khantus simboliza la conexión profunda de las comunidades andinas con la naturaleza, la agricultura y la celebración de la vida. A través de sus personajes, refleja la unidad y el trabajo conjunto entre hombres y mujeres, resaltando la importancia de la familia y la comunidad. La danza también representa el agradecimiento a la Pachamama (Madre Tierra) por las cosechas y la fertilidad. En contextos festivos, como el Carnaval de Oruro, la danza se convierte en un símbolo de orgullo cultural y resistencia, mostrando la rica herencia indígena y la continuidad de las tradiciones a lo largo del tiempo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://d38zjy0x98992m.cloudfront.net/1df205b6-ab31-45db-b09c-2bc0885eb23a/CharazaniJuly2012D292_xgaplus.jpg" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    "Khantus de Oro" - Una canción popular que resalta el ritmo y la energía de la danza.
+"Caminito de Khantus" - Una melodía que captura la esencia de la danza y se interpreta en festivales.
+"Khantus del Carnaval" - Un tema que se usa comúnmente durante las presentaciones de la danza en eventos festivos.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

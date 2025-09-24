@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&family=Rampart+One&family=Rubik+Glitch+Pop&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bungee+Tint&family=Honk&family=Jersey+25+Charted&family=Kalnia+Glaze:wght@100..700&family=Matemasie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Tint&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el CSS -->
+    <title>Mi Hermosa Página</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: repeat; 
+    background-size: auto; 
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+            color: darkred;
+            font-family: Arial, sans-serif;
+        }
+         body {
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+}
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5em;
+        }
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    border-radius: 30px;
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+}
+
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        header nav a {
+            color: darkred;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .register-form {
+            background-color: darkred;
+            padding: 70px;
+            border-radius: 5px;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .register-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .register-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-form button:hover {
+            background-color: darkred;
+        }
+        button {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        body {color: black;
+        }
+    </style>
+    <style>
+        table {background-color: white
+        }
+        h2 {
+  font-family: "Frijole", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        h2 {
+            color: red;
+            background-color: darkred;
+        }
+  h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        h3 {
+            color: white;
+        }
+    </style>
+    <style>
+        h1 {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        .holis {
+            background-color: darkred;
+        }
+        .holas {
+            background-color: black;
+        }
+        .holes {
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_1280.jpg);
+        }
+    </style>
+   <style>
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .icon-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .button-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-image: url(https://img.rtve.es/imagenes/por-estrellas-solo-brillan-noche/1682336188585.jpg);
+            color: white;
+            padding: 10px 20px;
+            border: skyblue;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-image: url(https://www.shutterstock.com/image-vector/rose-pink-stars-sprocket-shiny-260nw-1954017985.jpg);
+            border-radius: 20px;
+        }
+
+        .dropdown.show .dropdown-content {
+            display: block;
+        }
+    </style>
+    <style>
+    .osito {
+    border: 5px solid red;
+    border-radius: 20px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0;
+    padding: 20px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+.menu-item {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg); /* Fondo blanco */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.menu-item:hover {
+            background-image: url(https://img.freepik.com/fotos-premium/particulas-rojas-vuelan-sobre-fondo-negro_491279-656.jpg);
+        }
+.menu-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 1s ease; 
+}
+
+.menu-item a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.menu-item img {
+    max-width: 100%; 
+    height: auto;
+    border-bottom: 4px solid black; 
+}
+
+.menu-item p {
+    padding: 15px; 
+    text-align: center;
+    font-size: 1.2em; 
+    margin: 0; 
+}
+    </style>
+    <style>
+
+    </style>
+</head>
+<body>
+            <style>
+    .osito {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.osito:hover {
+    transform: scale(1.05);
+}
+</style>
+    <header>
+        <style>
+            .oruro:hover {
+            transform: scale(1.03);
+        }
+        .oruro {
+            transition: transform 0.3s;
+        }
+        .cok:hover {
+            transform: scale(1.5);
+        }
+        .cok {
+            size: 50px;
+            transition: 0.3s;
+        }
+        .cok {
+            width: 200px;
+            background-image: url(https://img.rtve.es/imagenes/por-estrellas-solo-brillan-noche/1682336188585.jpg);
+            color: white;
+            padding: 10px 20px;
+            border: 5px solid darkred;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            }
+        </style>
+        <h1 class="oruro"><img class="osito" border: 5px  src="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Imágenes página web\356da787063109.Y3JvcCw4NzksNjg3LDI0MSw0MjE3.jpg" width="150">MI ORURO</h1></img><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Carnaval\Carnaval.html"><button class="cok" type="submit">CARNAVAL DE ORURO</button></a>
+        <nav>
+            <style>
+                
+                 .tablita {
+                    border-color: skyblue;
+                    border-radius: 20px;
+                 }
+</style>
+<style>
+    .flechita {
+        width: 25px;
+        margin-right: 10px;
+    }
+    </style>
+    <style>
+        .dropdown:hover {
+            transform: scale(1.05);
+        }
+        .dropdown {
+            transition: transform 0.3s;
+        }
+    </style>
+<div class="dropdown">
+<table border=5px class="tablita">
+    <td><button class="dropdown-button" onclick="toggleDropdown()">Contacto con los creadores</button></td>
+</table>
+<style>
+    .redes {
+        width: 25px;
+        margin-right: 10px;
+    }
+    .dropdown-content {
+        background-image: url(https://img.freepik.com/vector-gratis/estrellas-brillantes-sobre-fondo-negro_1378-92.jpg);
+        border-radius: 20px;
+    }
+    </style>
+    <div class="dropdown-content">
+        <a href="https://wa.me/59160405382" style="text-decoration: none; color: #25D366;">
+<img class="redes" src="https://cdn-icons-png.freepik.com/256/3670/3670051.png?semt=ais_hybrid">WhatsApp</a>
+        <a href="https://www.facebook.com/profile.php?id=100054016760156" style="text-decoration: none; color: #1877F2;">
+<img class="redes" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg">Facebook</a>
+        <a href="#" style="text-decoration: none; color: #7289DA;">
+            <img class="redes" src="https://static.vecteezy.com/system/resources/previews/023/986/880/non_2x/discord-logo-discord-logo-transparent-discord-icon-transparent-free-free-png.png">Discord</a>
+    </div>
+</div>
+
+<script>
+    function toggleDropdown() {
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('show');
+    }
+
+    // Cerrar el dropdown si se hace clic fuera de él
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+            const dropdowns = document.getElementsByClassName("dropdown");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<div class="menu">
+        </nav>
+    </header>
+    <style>
+    .nn:hover {
+            transform: scale(1.5);
+        }
+        .nn {
+            transition: transform 0.3s;
+        }
+    </style>
+    <h1 class="nn" style="text-align:center";>LUGARES TURÍSTICOS</h1>
+<div class="menu">
+    <div class="menu-item">
+        <a href="pagina1.html">
+            <img src="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Imágenes página web\a59af7c158634f9bf6b5e0cf51404068.jpg" alt="Descripción 1">
+            <p>MONUMENTO A LA VIRGEN DEL SOCAVÓN</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina2.html">
+            <img src="https://www.pub.eldiario.net/noticias/2017/2017_04/nt170423/f_2017-04-23_54.jpg" alt="Descripción 2">
+            <p>IGLESIA DE LA VIRGEN DEL SOCAVÓN</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina3.html">
+            <img src="https://pbs.twimg.com/media/DijPDE_XcAAqzMg.jpg" alt="Descripción 3">
+            <p>MONUMENTO "CASCO DEL MINERO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina4.html">
+            <img src="https://patino.org/app/uploads/2023/05/dsc-0866-scaled.jpg" alt="Descripción 4">
+            <p>MUSEO "SIMÓN I. PATIÑO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina5.html">
+            <img src="https://i.ytimg.com/vi/D0jnzthIyKI/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGHIgXShHMA8=&rs=AOn4CLAwQTG2OUcL2456feIQi_3kcJ8bQQ" alt="Descripción 5">
+            <p>ZOOLÓGICO</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://www.urgente.bo/sites/default/files/styles/thumb_600x465/public/ARENALES%20%202.jpg" alt="Descripción 6">
+            <p>ZONA RENALES</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://de.bolivia.bo/im/2019/09/plaza-10-de-febrero2.jpg" alt="Descripción 7">
+            <p>PLAZA "10 DE FEBRERO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://iloveoruro.wordpress.com/wp-content/uploads/2013/10/arrbol06.jpg?w=593" alt="Descripción 8">
+            <p>PLAZA "MANUEL CASTRO DE PADILLA"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://www.verpais.com/fotos_ampliadas/3/7/6/00104376.jpg" alt="Descripción 9">
+            <p>PARQUE DE LA UNIÓN</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://www.laregion.bo/wp-content/uploads/2016/08/Estacion-Oruro-5.jpg" alt="Descripción 6">
+            <p>ESTACIÓN DE FERROCARRILES</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7zyVXPQi4kjqpz9inW0kQwTk-atW-RENMyie2XqUefUvjkiQuQXXDjcXe-ocqIUYdfeklyVBbf1OFocavDKRKNDSE_CSICrhNLon_SC_F-MKqG32gHWs3r91382cz03zoa-Q44iY8jWY/s1600/av+tomas+barron.jpg" alt="Descripción 7">
+            <p>AVENIDA "TOMÁS BARRÓN"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Estadio_Berm%C3%BAdez_de_Oruro.jpg" alt="Descripción 8">
+            <p>ESTADIO "JESÚS BERMUDEZ"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://www.boliviaentusmanos.com/turismo/imagenes/complejo-turistico-obrajes-4.jpg" alt="Descripción 9">
+            <p>AGUAS TERMALES DE OBRAJES</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://i.ytimg.com/vi/BMvVNLvPEeo/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHUBoAC4AOKAgwIABABGGUgXChSMA8=&rs=AOn4CLCSYhMFQ44elpPWzdSrbAF5kXLF8Q" alt="Descripción 6">
+            <p>BALNEARIO DE CAPACHOS</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/1b/6c/5b/interior-da-mina.jpg?w=1200&h=-1&s=1" alt="Descripción 7">
+            <p>MINA DE SAN JOSÉ</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://i.ytimg.com/vi/ZHUDMGrp1Ik/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-DoACuAiKAgwIABABGGUgXChRMA8=&rs=AOn4CLBIsNwIvp8_VZF2HpvgGITQ2VzBSQ" alt="Descripción 8">
+            <p>FORMACIONES ROCOSAS DE LOS 4 SAPOS</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://de.bolivia.bo/im/2018/06/museo-antropologico1.jpg" alt="Descripción 9">
+            <p>MUSEO "EDUARDO LÓPEZ RIVAS"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://www.hoteledenbolivia.com/assets/images/home-1.jpg" alt="Descripción 6">
+            <p>HOTEL "EDÉN"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://alisonmichelleoliverachaca.wordpress.com/wp-content/uploads/2020/08/dvdken9x0aeoflk.jpg" alt="Descripción 7">
+            <p>TELEFÉRICO HACIA EL MONUMENTO DE LA VIRGEN DEL SOCAVÓN</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://www.noticiasfides.com/images/news/2023/12/c-el-faro-de-conchupata-en-oruro-_1702068616.jpg" alt="Descripción 8">
+            <p>FARO DE CONCHUPATA</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://impresa.lapatria.bo/fotos/02_2017/280892_1_10.jpg" alt="Descripción 9">
+            <p>PLAZA "EDUARDO AVAROA"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYhgD_JklorkPl6kYOtzyFLqT8yTu1ox-N-sXdPxd8sRVSg-ThhaZCqMbnrhMMH6Yq-fgCRM2mz2rxQHHmUDrFfxV3AT4A-i_PPeVLEZFr_HrzuRnVnQU0jPoXbQ1wJq2UtkH-JJW7M0Ss/s1600/3.jpg" alt="Descripción 6">
+            <p>PLAZA "SEBASTIAN PAGADOR"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://impresa.lapatria.bo/fotos/01_2017/279219_1_21.jpg" alt="Descripción 7">
+            <p>NUEVA TERMINAL DE BUSES</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://i0.wp.com/nomada.bo/wp-content/uploads/2024/07/HOTEL-TERMINAL.jpg?fit=1600%2C1178&ssl=1" alt="Descripción 8">
+            <p>MALL TERMINAL</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://www.lostiempos.com/sites/default/files/styles/noticia_detalle/public/media_imagen/2020/4/11/oruro.jpg?itok=1kAlxCBz&c=950d40a0a1500df4367750b7e36114b4" alt="Descripción 9">
+            <p>CEMENTERIO GENERAL (MAUSOLEOS)</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKTVU-RTZID5T4r95EXziXQUz5h0VS6b9mhApX2C70rAsgOoyQHSqCsWb3_gN82H8vdk3vDQJ5sHFwiMRJfQPsbgPwqn1NlYaTUJIxD1-isZheRFcZs3ONpYbeSI-aHT4F7arBEACpZ4g/s1600/pie+de+gallo.jpg" alt="Descripción 6">
+            <p>CERRO "PIE DE GALLO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://www.verpais.com/fotos_originales/9/4/3/00110943.jpg" alt="Descripción 7">
+            <p>PARQUE "SIMÓN BOLIVAR"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://de.bolivia.bo/im/2019/07/parque-intiraymi1-580x408.jpg" alt="Descripción 8">
+            <p>PARQUE "INTI RAYMI"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://impresa.lapatria.bo/fotos/04_2019/347463_1_03.jpg" alt="Descripción 6">
+            <p>PARQUE "QUIRQUINCHO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://i.ytimg.com/vi/Do_t1VMKAis/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC1gOKAgwIABABGGUgWihFMA8=&rs=AOn4CLB8YgrNd55pSEwWaIeuSOjRMSyh7Q" alt="Descripción 7">
+            <p>IGLESIA DE "SAN GERARDO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vista_frontal%2C_catedral_de_Oruro.jpg" alt="Descripción 8">
+            <p>CATEDRAL DE ORURO</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipOmkBkOcLQg80m2OI0vBIQqVsrnolT5l3PL1PkC=w480-h300-k-n-rw" alt="Descripción 9">
+            <p>"QUIRQUIPARK"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina6.html">
+            <img src="https://de.bolivia.bo/im/2018/07/multicines-plaza-1.jpg" alt="Descripción 6">
+            <p>MULTICINES PLAZA</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina7.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYlZeg2rOzrFB783OYuaUpsMycasHbLTF1IWvFNEVaqVCrFobtb0Ia6wiJR9zFEqHQ3ZcBeB8w0iMUMlm-OGOZZOaZhYUKuCvzJYHBodx5K16DL6rLvMyyyy__SWwBlkp6ebzJb7wm6oQ/s1600/parq5.jpg" alt="Descripción 7">
+            <p>PARQUE ECOLÓGICO</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina8.html">
+            <img src="https://lapatria.bo/wp-content/uploads/2020/04/WhatsApp-Image-2020-04-28-at-13.05.58-scaled.jpeg" alt="Descripción 8">
+            <p>AVENIDA "6 DE AGOSTO"</p>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="pagina9.html">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR0OYF07als0J2nhQE4Ur5RiXjuQMCXtckS48Up5uz_LzAo6ymxg5sN4S-2oXJGFuTc5FtX81tLBiVTMGZ4YEldzIy7t5XbtgaWMCjILeAwhDtz_y4zUpQ7XuBcBhMKDJY0tr4w5vNH5Nn/s1600/Avenida+C%25C3%25ADvica+ya+muestra+el+colorido+del+Carnaval+de+Oruro.jpg" alt="Descripción 9">
+            <p>AVENIDA CÍVICA</p>
+        </a>
+    </div>
+</div>
+    <style>
+        h2 {
+        margin: center;
+        border-radius: 20px;
+         }
+         .jaja:hover {
+            transform: scale(1.03);
+        }
+        .jaja {
+            transition: transform 0.3s;
+        }
+        .jaja {
+        list-style-type: none; /* Elimina viñetas */
+        color: black; /* Cambia el color del texto a negro */
+    }
+
+    .jaja a {
+        text-decoration: none; /* Elimina subrayado de los enlaces */
+        color: inherit; /* Hereda el color del texto */
+    }
+
+    .jaja a:hover {
+        color: whitesmoke; /* Cambia el color del enlace al pasar el mouse, opcional */
+    }
+    </style>
+    <h2 class="jaja" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Página 2\PAGINA 2.html">Acerca de Oruro</a></h2>
+    <h2 class="jaja" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Información\Información.html">Información</a></h2>
+    <h2 class="jaja" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Actividades turísticas\Actividades turísticas.html">Actividades turísticas</a></h2>
+    <h2 class="jaja" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Carnaval\Carnaval.html">Carnaval</a></h2>
+    <h2 class="jaja" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Mapa de Oruro\mapa de Oruro.html">Mapa de Oruro</a></h2>
+    <h2 class="jaja" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Mapa de vías de transporte\mapa de vías de transporte.html">Mapa de vías de transporte</a></h2>
+</table>
+    
+
+    <section id="informacion">
+        
+    </section>
+
+    <section id="turismo">
+        
+    </section>
+
+    
+<style>
+    .social-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-logotipos-redes-sociales_69286-204.jpg?semt=ais_hybrid);
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: 0.3;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.social-icon:hover {
+    transform: scale(1.3);
+}
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.facebook {
+    color: #1877F2;
+}
+
+.instagram {
+    color: #E4405F;
+}
+.lo:hover {
+    transform: scale(1.3);
+}
+.lo {
+    transition: 0.3s;
+}
+    </style>
+    <h1 class="lo" style="text-align: center;">CONTÁCTATE CON NOSOTROS</h1>
+    <div class="social-container">
+    <a href="https://wa.me/59160405382" target="_blank" class="social-icon whatsapp">
+        <img src="https://cdn-icons-png.freepik.com/256/3670/3670051.png?semt=ais_hybrid" alt="WhatsApp">
+        <span>WhatsApp</span>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100054016760156" target="_blank" class="social-icon facebook">
+        <img src="https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png" alt="Facebook">
+        <span>Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/crisman_off/" target="_blank" class="social-icon instagram">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" alt="Instagram">
+        <span>Instagram</span>
+    </a>
+</div>
+</table>
+<style>
+    .ji {
+        color: grey;
+        font-family: monospace;
+    }
+    </style>
+<p class="ji"> Derechos reservados por la Asociación de Conjuntos Folklóricos de Oruro (ACFO), una vez subida y garantizada la página a la red los derechos de autor serán autorizados.</p>
+</body>
+</html>

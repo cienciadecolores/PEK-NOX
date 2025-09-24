@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Colores primarios, secundarios y terciarios</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1: #0f1424;
+    --bg2: #1b2547;
+    --text:#eaf2ff;
+    --shadow: rgba(0,0,0,.45);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin: 0;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU4T9g_nbxDxpycBhAlEKXZL1f5x3SUIfA7CIs2Sw0IGsxCwdmGvZNDX9_WjLvB4IFBnOguipsm48c8Ag6fy4J8koAzN8ENRoH2pqnb32CMN6-BhvOaE7c4AUcQWraAUhmUcvMWWSnpe4/s320/v742cep+animacion.gif);
+    background-size: 120%;
+    background-position-x: -120px;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 50%;
+    background-image: url("C:/Users/HP HOME/Documents/Página web código y ejemplo/index/Crayolas.png");
+    background-position-y:26px;
+    background-position-x: 19px;
+    border-radius: 30px;
+  }
+
+  .osito, .pixel2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 160px;
+    text-align: center;
+    height: 50%;
+    border: 5px solid transparent;
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+    transition: transform 0.3s;
+  }
+
+  .osito { margin-right: 10px; left: 15px; position: relative; }
+  .pixel2 { left: -10px; position: relative; }
+  .osito:hover, .pixel2:hover { transform: scale(1.03); }
+
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    color: #ffcc00;
+    text-shadow:
+      2px 2px #ff0000,
+      -2px 2px #ff0000,
+      2px -2px #ff0000,
+      -2px -2px #ff0000;
+    margin: 30px 0;
+  }
+
+  .circulo, .circulo-secundario, .circulo-terciario {
+    border-radius: 50%;
+    cursor: pointer;
+    image-rendering: pixelated;
+    margin-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    top: 650px;
+    transform: translate(-50%, -50%);
+  }
+
+  .circulo {
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(red 0deg 120deg, yellow 120deg 240deg, blue 240deg 360deg);
+    z-index: 3;
+  }
+
+  .circulo-secundario {
+    width: 480px;
+    height: 480px;
+    background: conic-gradient(orange 0deg 120deg, green 120deg 240deg, purple 240deg 360deg);
+    z-index: 2;
+  }
+
+  .circulo-terciario {
+    width: 660px;
+    height: 660px;
+    background: conic-gradient(
+      orangered 0deg 60deg,
+      gold 60deg 120deg,
+      yellowgreen 120deg 180deg,
+      turquoise 180deg 240deg,
+      slateblue 240deg 300deg,
+      mediumvioletred 300deg 360deg
+    );
+    z-index: 1;
+  }
+
+  .tooltip {
+    position: fixed;
+    background: #222;
+    border: 4px solid white;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    width: 240px;
+    opacity: 0;
+    z-index: 100;
+    image-rendering: pixelated;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .tooltip img {
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    image-rendering: pixelated;
+  }
+
+  #backButton {
+    position: absolute;
+    top: 185px;
+    left: 40px;
+    font-family: "Coral Pixels", serif;
+    background-color: black;
+    background: linear-gradient(to right, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid red;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 40px;
+  }
+  #backButton:hover { transform: scale(1.05); transition: transform 0.2s; }
+</style>
+</head>
+<body>
+
+<header>
+  <img class="osito" src="C:/Users/HP HOME/Documents/Página web código y ejemplo/index/logo PEK NOX.png" width="150">
+  <img class="pixel2" src="C:/Users/HP HOME/Documents/Página web código y ejemplo/index/logo de mi cole.png" width="150">
+</header>
+
+<button id="backButton" onclick="history.back()">
+  <a href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\menú colores\colores menú.html">Atrás</a>
+</button>
+
+<h1>Colores Terciarios</h1>
+
+<div class="circulo-terciario" id="circuloTer"></div>
+<div class="circulo-secundario" id="circuloSec"></div>
+<div class="circulo" id="circulo"></div>
+<div id="tooltip" class="tooltip"></div>
+
+<script>
+const tooltip = document.getElementById("tooltip");
+
+const colores = [
+  {name: "Rojo", degStart: 0, degEnd: 120, img: "https://i.redd.it/j724lqrd555d1.gif"},
+  {name: "Amarillo", degStart: 120, degEnd: 240, img: "https://i.pinimg.com/originals/8a/8b/27/8a8b2781551437b052d0ce67c355188e.gif"},
+  {name: "Azul", degStart: 240, degEnd: 360, img: "https://i.pinimg.com/originals/bb/58/06/bb580655d068538d8b02848c4ea241b4.gif"}
+];
+
+const coloresSec = [
+  {name: "Naranja", degStart: 0, degEnd: 120, img: "https://static.wikia.nocookie.net/93a7a23a-86a6-434d-9790-ad70a6d61929/scale-to-width/755"},
+  {name: "Verde", degStart: 120, degEnd: 240, img: "https://static.wikia.nocookie.net/memes-pedia/images/e/e0/Yoshi_Bailando.gif/revision/latest?cb=20220119202149&path-prefix=es"},
+  {name: "Violeta", degStart: 240, degEnd: 360, img: "https://media.tenor.com/KmVAmMlMaskAAAAM/purple-guy.gif"}
+];
+
+const coloresTer = [
+  {name: "Rojo-Naranja", degStart: 0, degEnd: 60, img: "https://images.emojiterra.com/google/noto-emoji/animated-emoji/1f640.gif"},
+  {name: "Amarillo-Naranja", degStart: 60, degEnd: 120, img: "https://static.wikia.nocookie.net/memes-pedia/images/e/ed/GIFnoob.gif/revision/latest/scale-to-width/360?cb=20200123180704&path-prefix=es"},
+  {name: "Amarillo-Verde", degStart: 120, degEnd: 180, img: "https://images.steamusercontent.com/ugc/883126625156700629/A6D563C232B7F54DDE098FF2A51333D1494F554E/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"},
+  {name: "Azul-Verde", degStart: 180, degEnd: 240, img: "https://www.lexaloffle.com/media/73903/8_club-penguin-ghosthy.gif"},
+  {name: "Azul-Violeta", degStart: 240, degEnd: 300, img: "https://el-pais.brightspotcdn.com/uploads/2017/09/09/59b36833970df.gif"},
+  {name: "Rojo-Violeta", degStart: 300, degEnd: 360, img: "https://pa1.aminoapps.com/6320/64b0d090b59b39b4a26f72394ac94e86e07de83a_hq.gif"}
+];
+
+function mostrarTooltip(e, circle, colores) {
+  const rect = circle.getBoundingClientRect();
+  const cx = rect.left + rect.width/2;
+  const cy = rect.top + rect.height/2;
+  const dx = e.clientX - cx;
+  const dy = e.clientY - cy;
+  const distancia = Math.sqrt(dx*dx + dy*dy);
+
+  if (distancia > rect.width/2) {
+    tooltip.style.opacity = 0;
+    return;
+  }
+
+  let angulo = Math.atan2(dy, dx) * 180 / Math.PI;
+  angulo = (angulo + 90 + 360) % 360;
+
+  let color = colores.find(c => angulo >= c.degStart && angulo < c.degEnd);
+
+  if (color) {
+    tooltip.innerHTML = `${color.name}<br><img src="${color.img}" alt="${color.name}">`;
+    tooltip.style.opacity = 1;
+    tooltip.style.left = (e.clientX + 20) + "px";
+    tooltip.style.top = (e.clientY - 200) + "px";
+  }
+}
+
+document.getElementById("circulo").addEventListener("mousemove", e => mostrarTooltip(e, circulo, colores));
+document.getElementById("circulo").addEventListener("mouseleave", () => tooltip.style.opacity = 0);
+
+document.getElementById("circuloSec").addEventListener("mousemove", e => mostrarTooltip(e, circuloSec, coloresSec));
+document.getElementById("circuloSec").addEventListener("mouseleave", () => tooltip.style.opacity = 0);
+
+document.getElementById("circuloTer").addEventListener("mousemove", e => mostrarTooltip(e, circuloTer, coloresTer));
+document.getElementById("circuloTer").addEventListener("mouseleave", () => tooltip.style.opacity = 0);
+</script>
+</body>
+</html>

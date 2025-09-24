@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cuerpos geométricos — Pixel Art 8-bit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-image: url(https://img.freepik.com/vector-gratis/fondo-lluvia-pixeles-abstractos_23-2148367889.jpg?semt=ais_incoming&w=740&q=80);
+      background-size: cover;
+      color: #fff;
+      font-family: "Coral Pixels", monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url("C:/Users/HP HOME/Documents/Página web código y ejemplo/index/Crayolas.png");
+    background-position-y:26px;
+    background-position-x: 19px;
+    border-radius: 30px;
+}
+        header nav a {
+            color: darkred;
+            text-decoration: ;
+            margin: 10px;
+        }
+    .app {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 24px;
+    }
+
+    .panel {
+      background: #111a2c;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      position: relative;
+      z-index: 0;
+    }
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      padding: 3px;
+      background: linear-gradient(
+        270deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+      background-size: 400% 400%;
+      animation: rainbow 8s linear infinite;
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .menu h2 {margin:0 0 12px 0; font-size:18px}
+    .menu-list {
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      max-height:70vh;
+      overflow-y:auto;
+      padding-right:6px;
+    }
+    .menu-item {
+      background: rgba(255,255,255,0.05);
+      padding: 10px;
+      border-radius: 10px;
+      cursor:pointer;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform .1s;
+      font-size: 1.1em;
+      font-family: "Coral Pixels", serif;
+      background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .menu-item:hover {transform: translateY(-2px);}
+    .menu-item.active {border-color:#64d2ff;}
+
+    .shape-body {
+      display:flex;
+      gap:20px;
+      margin-top:14px;
+      align-items: flex-start;
+    }
+    #viewer {
+      flex:1;
+      height:400px;
+      background:#000;
+      border-radius:12px;
+      overflow:hidden;
+    }
+    .info {width:260px;}
+    #shape-desc {
+      background:#000;
+      padding:12px;
+      border-radius:8px;
+      display:inline-block;
+    }
+    #shape-desc span {
+      background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.2em;
+      font-family: "Coral Pixels", serif;
+    }
+    .formula div, h2, #shape-name {
+      background:#000;
+      margin:6px 0;
+      padding:8px;
+      border-radius:6px;
+      font-size: 1.1em;
+      font-family: "Coral Pixels", serif;
+      background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media(max-width:780px){
+      .app{grid-template-columns:1fr}
+      .shape-body{flex-direction:column}
+      #viewer{height:300px}
+      .info{width:100%}
+    }
+
+    #backButton {
+      position: absolute;
+      top: 475px;
+      left: 1100px;
+      font-family: "Coral Pixels", serif;
+      border: 3px solid red;
+      padding: 5px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 40px;
+      background: linear-gradient(to right, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: latido 2s infinite;
+    }
+    #backButton:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s;
+    }
+    .osito {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.osito:hover {
+    transform: scale(1.03);
+}
+
+.pixel2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: -935px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.pixel2:hover {
+    transform: scale(1.03);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img class="osito" border: 5px  src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo PEK NOX.png" width="150">
+    <img class="pixel2" border: 5px  src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo de mi cole.png" width="150">
+        <nav>
+    </header>
+  <button id="backButton" onclick="history.back()"><a href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\figuras menú.html">Atrás</a></button>
+  <main class="app">
+    <!-- Menú lateral -->
+    <aside class="panel menu">
+      <h2>Figuras 3D</h2>
+      <div class="menu-list">
+        <button class="menu-item active" data-shape="cubo">Cubo</button>
+        <button class="menu-item" data-shape="esfera">Esfera</button>
+        <button class="menu-item" data-shape="cilindro">Cilindro</button>
+        <button class="menu-item" data-shape="cono">Cono</button>
+        <button class="menu-item" data-shape="torus">Toroide</button>
+        <button class="menu-item" data-shape="tetraedro">Tetraedro</button>
+        <button class="menu-item" data-shape="dodecaedro">Dodecaedro</button>
+      </div>
+    </aside>
+
+    <section class="panel content">
+      <h3 id="shape-name">Cubo</h3>
+      <div class="shape-body">
+        <div id="viewer"></div>
+        <div class="info">
+          <p id="shape-desc"><span>El cubo tiene 6 caras cuadradas, 8 vértices y 12 aristas.</span></p>
+          <div class="formula" id="shape-formula"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js"></script>
+  <script>
+    const datos = {
+      cubo:{desc:"El cubo tiene 6 caras cuadradas, 8 vértices y 12 aristas.", formulas:["Volumen: V = a³","Área: A = 6a²"]},
+      esfera:{desc:"La esfera es perfectamente redonda en 3D.", formulas:["Volumen: V = (4/3)πr³","Área: A = 4πr²"]},
+      cilindro:{desc:"El cilindro tiene dos bases circulares y una superficie curva.", formulas:["Volumen: V = πr²h","Área: A = 2πr(h + r)"]},
+      cono:{desc:"El cono tiene una base circular y termina en un vértice.", formulas:["Volumen: V = (πr²h)/3"]},
+      torus:{desc:"El toroide es como una dona.", formulas:["Volumen: V = 2π²Rr²","Área: A = 4π²Rr"]},
+      tetraedro:{desc:"El tetraedro tiene 4 caras triangulares.", formulas:["Volumen = a³/(6√2)","Área = √3 a²"]},
+      dodecaedro:{desc:"El dodecaedro tiene 12 caras pentagonales.", formulas:["Volumen = (15+7√5)/4 × a³","Área = 3√25+10√5 × a²"]}
+    };
+
+    let shape = "cubo";
+
+    function setup() {
+      let cnv = createCanvas(document.getElementById("viewer").clientWidth,
+                              document.getElementById("viewer").clientHeight,
+                              WEBGL);
+      cnv.parent("viewer");
+    }
+
+    function draw() {
+      background(0);
+      orbitControl();
+      if (shape==="cubo") { normalMaterial(); box(120); }
+      else if (shape==="esfera") { normalMaterial(); sphere(80); }
+      else if (shape==="cilindro") { normalMaterial(); cylinder(60, 140); }
+      else if (shape==="cono") { normalMaterial(); cone(60, 140); }
+      else if (shape==="torus") { normalMaterial(); torus(80, 25); }
+      else if (shape==="tetraedro") {
+        // --- Tetraedro con colores por cara ---
+        let r = 100;
+        let h = Math.sqrt(2/3) * r;
+        let v = [
+          createVector(0, -h, 0),
+          createVector(-r, h/3, r/Math.sqrt(3)),
+          createVector(r, h/3, r/Math.sqrt(3)),
+          createVector(0, h/3, -2*r/Math.sqrt(3))
+        ];
+        noStroke();
+        fill("#f87171"); beginShape(); vertex(v[0].x,v[0].y,v[0].z); vertex(v[1].x,v[1].y,v[1].z); vertex(v[2].x,v[2].y,v[2].z); endShape(CLOSE);
+        fill("#60a5fa"); beginShape(); vertex(v[0].x,v[0].y,v[0].z); vertex(v[2].x,v[2].y,v[2].z); vertex(v[3].x,v[3].y,v[3].z); endShape(CLOSE);
+        fill("#34d399"); beginShape(); vertex(v[0].x,v[0].y,v[0].z); vertex(v[3].x,v[3].y,v[3].z); vertex(v[1].x,v[1].y,v[1].z); endShape(CLOSE);
+        fill("#fbbf24"); beginShape(); vertex(v[1].x,v[1].y,v[1].z); vertex(v[3].x,v[3].y,v[3].z); vertex(v[2].x,v[2].y,v[2].z); endShape(CLOSE);
+      }
+      else if (shape==="dodecaedro") { normalMaterial(); sphere(100, 12, 12); }
+    }
+
+    function loadShape(s){
+      shape = s;
+      document.getElementById("shape-name").textContent = s.charAt(0).toUpperCase() + s.slice(1);
+      document.getElementById("shape-desc").innerHTML = `<span>${datos[s].desc}</span>`;
+      const fbox=document.getElementById("shape-formula"); fbox.innerHTML="";
+      datos[s].formulas.forEach(f=>{ let div=document.createElement("div"); div.textContent=f; fbox.appendChild(div); });
+    }
+
+    document.querySelectorAll(".menu-item").forEach(btn=>{
+      btn.addEventListener("click",()=>{
+        document.querySelectorAll(".menu-item").forEach(b=>b.classList.remove("active"));
+        btn.classList.add("active");
+        loadShape(btn.dataset.shape);
+      });
+    });
+
+    window.addEventListener("resize",()=>{ resizeCanvas(document.getElementById("viewer").clientWidth, document.getElementById("viewer").clientHeight); });
+
+    loadShape("cubo");
+  </script>
+</body>
+</html>

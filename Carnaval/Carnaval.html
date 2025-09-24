@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&family=Rampart+One&family=Rubik+Glitch+Pop&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Matemasie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bungee+Tint&family=Honk&family=Jersey+25+Charted&family=Kalnia+Glaze:wght@100..700&family=Matemasie&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Tint&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Seymour+One&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <title>Mi Hermosa Página</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1569470451072-68314f596aec?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: repeat; 
+    background-size: auto; 
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+            color: darkred;
+            font-family: Arial, sans-serif;
+        }
+         body {
+            background-color: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+}
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5em;
+        }
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    border-radius: 30px;
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+}
+
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        header nav a {
+            color: darkred;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .register-form {
+            background-color: darkred;
+            padding: 70px;
+            border-radius: 5px;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .register-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .register-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-form button:hover {
+            background-color: darkred;
+        }
+        button {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        body {color: black;
+        }
+    </style>
+    <style>
+        table {background-color: white
+        }
+        h2 {
+  font-family: "Frijole", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        h2 {
+            color: red;
+        }
+  h3 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        h3 {
+            color: white;
+        }
+    </style>
+    <style>
+        h1 {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+    <style>
+        .holis {
+            background-color: darkred;
+        }
+        .holas {
+            background-color: black;
+        }
+        .holes {
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_1280.jpg);
+        }
+    </style>
+   <style>
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .icon-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .button-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-image: url(https://img.rtve.es/imagenes/por-estrellas-solo-brillan-noche/1682336188585.jpg);
+            color: white;
+            padding: 10px 20px;
+            border: skyblue;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-image: url(https://www.shutterstock.com/image-vector/rose-pink-stars-sprocket-shiny-260nw-1954017985.jpg);
+            border-radius: 20px;
+        }
+
+        .dropdown.show .dropdown-content {
+            display: block;
+        }
+    </style>
+    <style>
+    .osito {
+    border: 5px solid red;
+    border-radius: 20px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+    </style>
+    <style>
+
+    </style>
+</head>
+<body>
+            <style>
+    .osito {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    border: 10px solid darkred;
+}
+
+.osito:hover {
+    transform: scale(1.05);
+}
+</style>
+<style>
+        /* Configuración general */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .animal-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espacio entre los botones */
+        }
+
+        .animal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.5s ease;
+            overflow: hidden;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 15px;
+            background-image: url(https://www.ngenespanol.com/wp-content/uploads/2023/09/por-que-parpadean-las-estrellas.jpg);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .animal img {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .animal img {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.animal:hover {
+    transform: scale(1.0095);
+}
+
+        .animal-content {
+            max-width: 0;
+            opacity: 0;
+            transition: max-width 1s ease, opacity 1s ease;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .animal:hover .animal-content {
+            max-width: 800px;
+            opacity: 1;
+        }
+
+        /* Alternar izquierda/derecha */
+        .animal:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .animal:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .animal-info {
+            padding: 20px;
+            font-size: 60px;
+            color: white;
+            margin: auto;
+        }
+.animal-info {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        /* Transiciones y efectos estéticos */
+        .animal:hover {
+            background-image: url(https://static.videezy.com/system/resources/thumbnails/000/042/456/original/Sky-night-rotation-space-background.jpg);
+        }
+
+        .animal-info {
+            transition: transform 2s ease;
+        }
+
+        .animal:hover .animal-info {
+            transform: translateX(-7px);
+        }
+    </style>
+<style>
+        /*
+
+       
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        /* Estilo para el título */
+        .danza-titulo {
+            text-align: center;
+            font-size: 75px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+.danza-titulo {
+  font-family: "Bungee Tint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        /* Imágenes intercaladas */
+        .danza-imagen {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            margin: 20px;
+        }
+
+        .danza-imagen.izquierda {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .danza-imagen.derecha {
+            float: right;
+            margin-left: 20px;
+        }
+
+        /* Efecto de agrandamiento en hover */
+        .danza-imagen:hover {
+            transform: scale(1.05);
+        }
+
+        /* Asegura que el texto fluya alrededor de las imágenes */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .clearfix {
+            color: white;
+        }
+        .clearfix {
+  font-family: "Nova Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    </style>
+    <header>
+        <style>
+            .oruro:hover {
+            transform: scale(1.03);
+        }
+        .oruro {
+            transition: transform 0.3s;
+            position: relative;
+            left: 20px;
+        }
+        </style>
+        <h1 class="oruro"><img class="osito" border: 5px  src="https://play-lh.googleusercontent.com/V73spWseyyCWSo_-6OC5JIg-GYVdJf140x2VRUj7d5b7LQqa26Yqw9c6kqzEMzQytA=w240-h480-rw" width="150"> MI ORURO</h1>
+        <nav>
+            <style>
+                
+                 .tablita {
+                    border-color: skyblue;
+                    border-radius: 20px;
+                 }
+</style>
+<style>
+    .flechita {
+        width: 25px;
+        margin-right: 10px;
+    }
+    </style>
+    <style>
+        .dropdown:hover {
+            transform: scale(1.05);
+        }
+        .dropdown {
+            transition: transform 0.3s;
+        }
+    </style>
+<div class="dropdown">
+<table border=5px class="tablita">
+    <td><button class="dropdown-button" onclick="toggleDropdown()">Contacto con los creadores</button></td>
+</table>
+<style>
+    .redes {
+        width: 25px;
+        margin-right: 10px;
+    }
+    .dropdown-content {
+        background-image: url(https://img.freepik.com/vector-gratis/estrellas-brillantes-sobre-fondo-negro_1378-92.jpg);
+        border-radius: 20px;
+    }
+    </style>
+    <div class="dropdown-content">
+        <a href="https://wa.me/59160405382" style="text-decoration: none; color: #25D366;">
+<img class="redes" src="https://cdn-icons-png.freepik.com/256/3670/3670051.png?semt=ais_hybrid">WhatsApp</a>
+        <a href="https://www.facebook.com/profile.php?id=100054016760156" style="text-decoration: none; color: #1877F2;">
+<img class="redes" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg">Facebook</a>
+        <a href="#" style="text-decoration: none; color: #7289DA;">
+            <img class="redes" src="https://static.vecteezy.com/system/resources/previews/023/986/880/non_2x/discord-logo-discord-logo-transparent-discord-icon-transparent-free-free-png.png">Discord</a>
+    </div>
+</div>
+
+<script>
+    function toggleDropdown() {
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.classList.toggle('show');
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-button')) {
+            const dropdowns = document.getElementsByClassName("dropdown");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<div class="menu">
+        </nav>
+    </header>
+    <style>
+    .danza-titulo:hover {
+            transform: scale(1.5);
+        }
+        .danza-titulo {
+            transition: transform 0.3s;
+        }
+        .lol:hover {
+            transform: scale(1.02);
+        }
+        .lol {
+            transition: transform 0.3s;
+        }
+        .lol:hover{
+            transform: translateX(100px);
+        }
+    </style>
+    <div class="danza-titulo">
+        CARNAVAL DE ORURO
+    </div>
+<style>
+            .kar:hover {
+            transform: scale(1.03);
+        }
+        .kar {
+            transition: transform 0.3s;
+            margin-right:25px ;
+            margin-left:25px ;
+        }
+        </style>
+    <div class="clearfix">
+        <h2 class="lol"><p>CARNAVAL DE ORURO</p></h2>
+        <img src="https://concejomunicipaloruro.com/wp-content/uploads/2021/12/667734357-1024x635.jpg" alt="Diablada 1" class="danza-imagen izquierda">
+        <p class="kar">El Carnaval de Oruro es una festividad religiosa, folclórica y cultural de intangibilidad en la ciudad de Oruro, así como la máxima representación de los carnavales en Bolivia con su danza principal la Diablada desde sus orígenes, que llegó a constituirse en un modelo de capaz de generar manifestaciones culturales parecidas en otros espacios geográficos. Declarado como “Obra Maestra del Patrimonio Oral e Intangible de la Humanidad” (Unesco) el año 2001. A lo largo del carnaval participan más de 48 conjuntos folklóricos que son distribuidos en 18 especialidades de danzas que reúnen de distintas partes de Bolivia y que realizan su peregrinación hacia el Santuario del Socavón cada sábado de carnaval en la tradicional “Entrada”. Esta celebración, por la gran popularidad que alcanzó en los últimos años y debido a su gran manifestación cultural y atracción turística, pasó a volverse uno de los carnavales más importantes conjuntamente con el de Río de Janeiro en Brasil, el Carnaval de Barranquilla en Colombia y otros carnavales en el mundo.La historia de este Carnaval se remonta a la época precolombina, cuando el pueblo indígena Uru realizaba importantes ceremonias en Oruro, ciudad que fue refundada posteriormente por los españoles, pero siguió siendo un lugar sagrado para el pueblo indígena, quienes continuaron celebrando varias ceremonias en ese lugar. Alrededor de 400 000 personas visitan anualmente el carnaval, generando un movimiento económico de al menos 125 millones de bolivianos</p>
+
+        <img src="https://www.prestemayor.com/wp-content/uploads/2023/02/7_21-4755922_20230207181137.jpg" alt="Diablada 2" class="danza-imagen derecha">
+        <H2 class="lol"><p>HISTORIA</p></H2>
+        <p class="kar">Se presenta la interculturalidad de los pueblos preincaicos, prehispánicos, cazadores, lacustres, agrícolas, ganaderos altiplánicos y otros de las tierras bajas.3​ Desde épocas remotas Jururu (Uru Uru), hoy Oruro fue un centro de peregrinación religiosa del mundo andino, hacia la sagrada serranía de los Urus, que contaba con deidades protectoras llamadas Wakas, apus y achachilas, estas deidades eran Jampatukollo (cerro Sapo), Argentillo Arankani (cerro lagarto), la víbora (Quwak), el cóndor y Wakallusta (Resbaladero de Ídolos) entre otros. Tras la conquista del Imperio Incaico, estos trataron de introducir su religión mediante la conversión de Wari a un semidiós malvado y a las wakas o Apus sagradas en plagas, petrificadas por la Ñusta Incaica. Así los urus debían adorar solo a pachacamaj representado por Inti.[cita requerida]
+
+Los españoles a partir de la conquista y coloniaje durante el Virreinato del Perú, produjeron un singular sincretismo religioso de transculturización con Huari (Wari), sintetizado en el tío que quedó como el diablo universal y junto a la pachamama, la ñusta que se convirtió en la virgen del socavón.</p>
+
+   <H2 class="lol"><p>PERIODO COLONIAL</p></H2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0eNXhsBZlST2I3hA0WL7IprBwlK2ldLFww&s" alt="Diablada 3" class="danza-imagen izquierda">
+        <p class="kar">Se expresa a partir del encuentro durante el Virreinato del Perú, del mundo occidental (españoles) con las culturas nativas de la región. El hecho fue generando sus propios mecanismos sociales de salvaguarda que se iniciaron en 1789 durante el Virreinato del Perú cuando la iglesia católica entroniza oficialmente la imagen de la virgen candelaria que es venerada dentro la festividad del Carnaval, por eso la fecha movible.5​ Los mineros crean la comparsa de diablos que rendiría su homenaje a la virgen del socavón los sábados de carnaval, días que tenían libre del trabajo en la mina.[cita requerida] Por órdenes del Virrey del Perú, las celebraciones fueron prohibidas a lo largo del siglo XVII, aunque se mantuvieron y revivieron por parte de los pueblos originarios bajo los rituales católicos de la Fiesta de la Candelaria (o purificación de la Virgen). Los íconos cristianos reemplazaron así a las deidades nativas, con el cambio de los santos por los elementos menores de la cosmología inca. En 1818 el párroco de Oruro, Ladislao Montealegre, escribió la obra Narrativa de los siete pecados capitales, para la cual, según Harris y Fortún, se habría presentado elementos del Ball de diables catalán como ser la diablesa, que en la diablada es denominada China Supay y en donde el diablo lidera a los siete pecados capitales en batalla en contra de las virtudes opuestas y un ángel.
+
+Virgen del Socavón
+
+Santuario de la Virgen del Socavón.
+En 1559, solicitados por el encomendero de Paria Paria, Lorenzo de Aldana, los frailes Agustinos vinieron desde España al Virreinato del Perú y se dedicaron a la evangelización del Altiplano. Sus primeras llegadas son en Challacollo, Paria, Toledo y Capinota en este año. El encomendero de Paria, Lorenzo de Aldana, había creado un Mayorazgo o fundación benéfica a favor de la religión y de los indígenas encomendados a él, Aldana muere en el 1573, diez años antes que Francisco Tito Yupanqui tallara, en 1583, la Imagen de la Candelaria para el santuario de Copacabana durante el Virreinato de Perú, igualmente confiado a los Agustinos en 1588. Aldana había nacido en 1508 en Extremadura, en la ciudad de Cáceres, donde era grande la devoción a la Virgen de la Candelaria.</p>
+
+ <H2 class="lol"><p>ACTUALIDAD</p></H2>     
+<img src="https://ichef.bbci.co.uk/ace/ws/640/amz/worldservice/live/assets/images/2016/01/29/160129115710_carnaval_de_oruro_976x549_fellipeabreu_nocredit.jpg.webp" alt="Diablada 4" class="danza-imagen derecha">
+       <p class="kar">La celebración se realiza en la ciudad de Oruro, la cual es considerada la capital folklórica de Bolivia. En el carnaval de Oruro aún conviven en una simbiosis la religión pagana y católica, mostrando ante el mundo su sincretismo religioso único, tres días antes al sábado de peregrinación hacia el santuario del socavón por parte de los 52 conjuntos, la gente visita al cóndor y una semana después a la víbora al sur de la ciudad, el sapo al norte y al este los arenales (hormigas). El carnaval de Oruro parte de la estructura temporal lluviosa del altiplano (jallupacha) que se inicia con los rituales de noviembre relacionado al culto de los muertos en Todo Santos (Siguiente semana el primer convite del carnaval), periodo que se extiende hasta febrero (Entrada de peregrinación hacia la Virgen del Socavón). De acuerdo a la Ley 602 de la República de Bolivia, son organizadores del Carnaval de Oruro: la Alcaldía Municipal de Oruro, la Asociación de Conjuntos del Folklore (A.C.F.O.) y el Comité Departamental de Etnografía y Folklore de Oruro. En la actualidad, las más importantes celebraciones se centran en el Santuario del Socavón. Son 18 las especialidades de danzas, siendo 52 los conjuntos folklóricos inscriptos en la A.C.F.O. La devoción de los bailarines es tan grande por la virgen del Socavón o (mamita Candelaria) que llegan de diferentes regiones del país, y realizan un recorrido extenso, al llegar a la iglesia los bailarines hacen su ingreso al santuario de rodillas y con lágrimas en el rostro pidiendo un favor a la virgen del Socavón y en agradecimiento prometen bailar durante tres años consecutivos. Todo finaliza con dos representaciones teatrales de obras católicas que se centran una en la conquista española y otra sobre el triunfo del arcángel Miguel sobre el Demonio.</p>
+
+    <H2 class="lol"><p>PATRIMONIO DE LA HUMANIDAD</p></H2> 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuM6Cm8O0YqvvdlgI2H8yiKXkp3KGkeueJ7Q&s" alt="Diablada 1" class="danza-imagen izquierda">
+
+<p class="kar">Un jurado internacional de personalidades, convocado por la Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (Unesco), proclamó al Carnaval de Oruro como “Obra Maestra del Patrimonio Oral e Intangible de la Humanidad”. El 18 de mayo de 2001, se transmitió la proclamación desde París, Francia. El jurado internacional fue presidido por el escritor Juan Goytisolo. El mundo artístico, cultural, académico y gubernamental estaba representado por el presidente de la República de Malí, Alpha Oumar Konare, el Kabaka de Uganda, Su majestad Ronald Muwenda Mutebi il, la princesa Basma Bint Talal de Jordania y el escritor mexicano Carlos Fuentes.17​
+
+Para la postulación la UNESCO solicitó una carpeta con la información (FORMULARIO DE POSTULACIÓN), esta fue elaborada por la ACFO (Asociación de Conjuntos del Folclore de Oruro) a la cabeza del presidente de esta entidad Dr. Walter Zambrana Balladares y su directorio, se delegó la gestión institucional y nacional al Sr. Ascanio J. Nava Rodriguez director del Gabinete de Postulación del Carnaval de Oruro, Secretario de Relaciones de la ACFO, que redactó el formulario de Postulación bajo el asesoramiento y aporte científico del historiador orureño Dr. Ramiro Condarco Morales y el Plan de Desarrollo Cultural Decenal con el Lic, Daniel Mantilla, ambos documentos y el libreto del documental del Carnaval de Oruro, fueron entregados a las instituciones oficiales como la ACFO y la UNESCO por parte del Presidente de la República Gral. Hugo Banzer Suarez el mes diciembre del año 2000, al cual se sumaron una serie de personalidad entre historiadores e intelectuales, en una primera instancia. Bolivia con la entrega oficial en manos del representante de la UNESCO postuló al Carnaval de Oruro, para posteriormente estas carpetas y anexos, ser enviada a la UNESCO en París Francia. El carnaval de Oruro al ser la conjunción de más de 40.000 danzantes, cerca de 10.000 músicos distribuidos en 150 bandas, baile callejero con un escenario repleto de más de 400.000 espectadores del país y extranjeros en casi tres kilómetros de distancia, en una reunión inimaginable de niños, niñas, mujeres y hombres, que cantan, bailan y trabajan, en honor a la Virgen del Socavón, Patrona de los mineros y Reina del folklore de Bolivia. Llegó a convertirse en un centro de irradiación de danza y música de Diabladas, morenadas, caporales, tobas, tinkus, (18 culturas que hacen a 18 especialidades de danza) etc. y constituirse de esta forma en una “ Obra Maestra del Patrimonio Oral e Intangible de la Humanidad”.</p>
+<H2 class="lol"><p>ANATA ANDINA</p></H2> 
+<img src="https://cdn.bolivia.com/sdi/2019/02/28/evo-disfruta-del-anata-andino-en-oruro-y-recibe-el-carino-de-comunidades-rurales-715018-0.jpg" alt="Diablada 1" class="danza-imagen izquierda">
+
+<p class="kar">Anata o Anata Andina es una fiesta que se celebra en la región altiplánica de Bolivia. La fiesta inicia con la bendición de la producción agrícola, y la Ch'alla que es un ritual en el cual se agradece a la Pachamama o Madre Tierra por la primera cosecha que se realiza al finalizar el Anata; durante la Ch'alla se ofrece azúcar, alcohol, flores, prehispánica. Esta festividad está ligada al ciclo de producción agrícola de la papa y se celebra cada año en la época de lluvias, durante el mes de febrero.
+La fiesta inicia con la bendición de la producción agrícola, y la Ch'alla que es un ritual en el cual se agradece a la Pachamama o Madre Tierra por la primera cosecha que se realiza al finalizar el Anata; durante la Ch'alla se ofrece azúcar, alcohol, flores, mixtura y vino como ofrenda a la Pachamama.​
+
+En la Ch'alla los "amautas" o "yatiris" realizan el sacrificio de una llama cuya sangre se vierte en la tierra como ofrenda a la Pachamama.​
+
+La celebración incluye además una entrada de baile en la que se representan danzas típicas de la región altiplánica.2​
+
+En la actualidad esta celebración se relaciona con la fiesta de la Virgen de la Candelaria, y se realiza dos días antes del carnaval de Oruro, ese día también se celebra la fiesta de comadres en Bolivia.</p>
+<style>
+.dancitas {
+    font-size: 75px;
+}
+.dancitas:hover {
+            transform: scale(1.3);
+        }
+        .dancitas {
+            transition: transform 0.3s;
+        }
+    </style>
+    <H1 class="dancitas" style="text-align: center;"><p>DANZAS</p></H1> 
+</div>
+<style>
+    .animal-link {
+        text-decoration: none;
+    }
+    </style>
+    <style>
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover{
+            transform: scale(1.07);
+        }
+    </style>
+<div class="animal-container">
+        <!-- Imagen a la izquierda, texto a la derecha -->
+    <div class="animal">
+        <img src="https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2018/01/11160344/nosheoruroOK.jpg" alt="Animal 1">
+        <div class="animal-content">
+            <button onclick="window.location.href='file:///C:/Users/USUARIO/OneDrive/Imágenes/Página%20web%20código%20y%20ejemplo/Carnaval/Danzas/Diablada.html';">
+            <div class="animal-info"><p>DIABLADA</p></div>
+        </button>
+        </div>
+    </div>
+</a>
+
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://www.lostiempos.com/sites/default/files/styles/noticia_detalle/public/media_imagen/2021/9/8/morenada_1_.jpg?itok=_RUmh3ze" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='file:///C:/Users/USUARIO/OneDrive/Imágenes/Página%20web%20código%20y%20ejemplo/Carnaval/Danzas/Morenada.html';">
+                <div class="animal-info"><p>MORENADADA</p></p></div>
+            </div>
+        </div>
+
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/ARYJ4uvsIZM/maxresdefault.jpg" alt="Animal 3">
+            <div class="animal-content">
+                <button onclick="window.location.href='file:///C:/Users/USUARIO/OneDrive/Imágenes/Página%20web%20código%20y%20ejemplo/Carnaval/Danzas/Caporales.html';">
+                <div class="animal-info"><p>CAPORALES</p></div>
+            </div>
+        </div>
+
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/96HT1V-lMFo/maxresdefault.jpg" alt="Animal 4">
+            <div class="animal-content">
+                <button onclick="window.location.href='file:///C:/Users/USUARIO/OneDrive/Imágenes/Página%20web%20código%20y%20ejemplo/Carnaval/Danzas/Llamerada.html';">
+                <div class="animal-info"><p>LLAMERADA</p></div>
+            </div>
+        </div>
+
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://ahoraelpueblo.bo/images/noticias/Cultura/2023/11/Cullaguada12116.jpeg" alt="Animal 5">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Kullaguada.html';">
+                <div class="animal-info"><p>KULLAGUADA</p></div>
+            </div>
+        </div>
+
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://boliviamia.net/Images/ArticlePhotos/tobas01.jpg" alt="Animal 6">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Tobas.html';">
+                <div class="animal-info"><p>TOBAS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Bailarinas_de_tinku_2.jpg/800px-Bailarinas_de_tinku_2.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Tinkus.html';">
+                <div class="animal-info"><p>TINKUS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://i0.wp.com/amun.bo/wp-content/uploads/2022/02/Waka-waka.jpeg?fit=1500%2C1000&ssl=1" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Waca Waca.html';">
+                <div class="animal-info"><p>WACA WACA</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/I4XrN7a41vs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA0hGuoRszVL-606dNUPjZnSkPjLQ" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Phujllay.html';">
+                <div class="animal-info"><p>PHUJLLAY</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/p1CSFZy_Mn8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC1depbF_w1SjInh5iUYxBEOdxH2Q" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Suri Sicuri.html';">
+                <div class="animal-info"><p>SURI SICURI</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://thumbs.dreamstime.com/b/inca-dancers-en-el-carnaval-de-oruro-en-bolivia-88576439.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Incas.html';">
+                <div class="animal-info"><p>INCAS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://elrinconboliviano.com/wp-content/uploads/2020/11/antawara-tradicional-de-bolivia_700x500.jpg" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Antawara.html';">
+                <div class="animal-info"><p>ANTAWARA</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/MS2E9-7Gw0k/maxresdefault.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Chicheños.html';">
+                <div class="animal-info"><p>CHICHEÑOS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcNsIVa9hoIVi-n5tbsg3Dpr1R_tZVskePqkAoDQL2ZyEl8MMLEXAVy9ONMu6UlELofBjaQZxcAAJZVkecSvAEw8fHd2OlWZV1SN1oo4NqHjuoNECEYO7EBtmXAZYKSWi3lptuwQ3_nwQ/s1600/DOCTORCITOS+B+LOG.jpg" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Doctorcitos.html';">
+                <div class="animal-info"><p>DOCTORCITOS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://www.ibolivia.org/wp-content/uploads/2019/07/danza-zamponeros-bolivia.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Zampoñeros.html';">
+                <div class="animal-info"><p>ZAMPOÑEROS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://boliviamia.net/Images/ArticlePhotos/negritos02.jpg" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Negritos.html';">
+                <div class="animal-info"><p>NEGRITOS</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la izquierda, texto a la derecha -->
+        <div class="animal">
+            <img src="https://www.la-razon.com/wp-content/uploads/2022/08/14/02/Urcuina-4.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Salay.html';">
+                <div class="animal-info"><p>SALAY</p></div>
+            </div>
+        </div>
+        <!-- Imagen a la derecha, texto a la izquierda -->
+        <div class="animal">
+            <img src="https://www.educa.com.bo/sites/default/files/danza-potolos.jpg" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Potolos.html';">
+                <div class="animal-info"><p>POTOLOS</p></div>
+            </div>
+        </div>
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/tSqs7BFhkD4/maxresdefault.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Kallawayas.html';">
+                <div class="animal-info"><p>KALLAWAYAS</p></div>
+            </div>
+        </div>
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/xq6LcRLE8IY/maxresdefault.jpg" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Ahuatiris.html';">
+                <div class="animal-info"><p>AHUATIRIS</p></div>
+            </div>
+        </div>
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/oTT46NLyNhc/maxresdefault.jpg" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Wititis.html';">
+                <div class="animal-info"><p>WITITIS</p></div>
+            </div>
+        </div>
+        <div class="animal">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj16vGPHJE3G0rqJKCM408NjwJh6_yea8c9gFY4Enp3hby4ByguKVvLLMEucDVfJPLcQLMgvtHR0dP6hfNx9sEuaWKWXnK7CAZ0U8O4RU_UdNwcbBjqmEh9Pd7lmNpnWYNN99rraRV9Y1Q/w1200-h630-p-k-no-nu/TARQUEADA+BLOG.jpg" alt="Animal 2">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Tarqueada.html';">
+                <div class="animal-info"><p>TARQUEADA</p></div>
+            </div>
+        </div>
+        <div class="animal">
+            <img src="https://i.ytimg.com/vi/ffF-FR7GS3U/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDsHXN8XrW_Gr9PsZDAkH5sk42_jQ" alt="Animal 1">
+            <div class="animal-content">
+                <button onclick="window.location.href='C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Carnaval/Danzas/Khantus.html';">
+                <div class="animal-info"><p>KHANTUS</p></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        h2 {
+        margin: center;
+        border-radius: 20px;
+         }
+         .ul {
+            background-color: darkred;
+         }
+         .ul:hover {
+            transform: scale(1.03);
+        }
+        .ul {
+            transition: transform 0.3s;
+        }
+        .ul {
+        list-style-type: none; /* Elimina viñetas */
+        color: black; /* Cambia el color del texto a negro */
+    }
+
+    .ul a {
+        text-decoration: none; /* Elimina subrayado de los enlaces */
+        color: inherit; /* Hereda el color del texto */
+    }
+
+    .ul a:hover {
+        color: whitesmoke; /* Cambia el color del enlace al pasar el mouse, opcional */
+    }
+    </style>
+    <h2 class="ul" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Página 2\PAGINA 2.html">Acerca de Oruro</a></h2>
+    <h2 class="ul" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Información\Información.html">Información</a></h2>
+    <h2 class="ul" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Lugares turísticos\lugares turísticos.html">Lugares turísticos</a></h2>
+    <h2 class="ul" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Actividades turísticas\Actividades turísticas.html">Actividades turísticas</a></h2>
+    <h2 class="ul" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Mapa de Oruro\mapa de Oruro.html">Mapa de Oruro</a></h2>
+    <h2 class="ul" style="text-align: center;"><a href="C:\Users\USUARIO\OneDrive\Imágenes\Página web código y ejemplo\Mapa de vías de transporte\mapa de vías de transporte.html">Mapa de vías de transporte</a></h2>
+</table>
+    <section id="informacion">
+    </section>
+    <section id="turismo">
+    </section>
+<style>
+    .social-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-logotipos-redes-sociales_69286-204.jpg?semt=ais_hybrid);
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: 0.3;
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.social-icon:hover {
+    transform: scale(1.3);
+}
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.facebook {
+    color: #1877F2;
+}
+
+.instagram {
+    color: #E4405F;
+}
+.lo:hover {
+    transform: scale(1.3);
+}
+.lo {
+    transition: 0.3s;
+}
+    </style>
+    <h1 class="lo" style="text-align: center;">CONTÁCTATE CON NOSOTROS</h1>
+    <div class="social-container">
+    <a href="https://wa.me/59160405382" target="_blank" class="social-icon whatsapp">
+        <img src="https://cdn-icons-png.freepik.com/256/3670/3670051.png?semt=ais_hybrid" alt="WhatsApp">
+        <span>WhatsApp</span>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100054016760156" target="_blank" class="social-icon facebook">
+        <img src="https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png" alt="Facebook">
+        <span>Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/crisman_off/" target="_blank" class="social-icon instagram">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" alt="Instagram">
+        <span>Instagram</span>
+    </a>
+</div>
+</table>
+<style>
+    .ji {
+        color: grey;
+        font-family: monospace;
+    }
+    </style>
+<p class="ji"> Derechos reservados por la Asociación de Conjuntos Folklóricos de Oruro (ACFO), una vez subida y garantizada la página a la red los derechos de autor serán autorizados.</p>
+</body>
+</html>

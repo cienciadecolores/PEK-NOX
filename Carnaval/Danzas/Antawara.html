@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antawara</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/maxresdefault (1) (1).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ANTAWARA</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 100px;
+    }
+    .ka {
+        position: relative;
+        left: 20px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS ANTAWARA</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://elrinconboliviano.com/wp-content/uploads/2020/11/antawara-tradicional-traje-de-hombre_500x600.jpg" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGsj0bAAMSjix53az9BGKN-lEU7QxP5pq5A&s" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza Antawara tiene sus raíces en las tradiciones andinas de Bolivia, especialmente en la región de Potosí. Su historia está vinculada a la celebración de la vida, la fertilidad y la cosecha, y es una representación de la conexión de las comunidades con la Pachamama (Madre Tierra).
+
+Tradicionalmente, la danza se realizaba durante las festividades agrícolas, rindiendo homenaje a la tierra y agradeciendo por las cosechas. Los bailarines, que suelen vestir trajes coloridos y adornos que reflejan la cultura andina, imitan movimientos que simbolizan el trabajo en el campo y la alegría de la cosecha.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://www.prestemayor.com/wp-content/uploads/2024/02/DSC_04291.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza Antawara representa la conexión entre la comunidad y la Pachamama (Madre Tierra), simbolizando la fertilidad, la cosecha y la alegría de la vida rural. A través de sus movimientos, los bailarines evocan el trabajo agrícola, celebrando la gratitud por las cosechas y el ciclo de la vida. La danza también destaca la unidad y la colaboración entre los miembros de la comunidad, reflejando la importancia de las tradiciones y la herencia cultural andina. Además, incorpora elementos de la cosmovisión indígena, donde se rinde homenaje a la naturaleza y se busca fortalecer la identidad cultural. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://www.machupicchu-tours-peru.com/wp-content/uploads/2021/05/la-pachamama-la-madre-tierra.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Pachamama: Pachamama es la representación de la Madre Tierra en la cosmovisión andina. Simboliza la fertilidad, la abundancia y el respeto hacia la naturaleza. En la danza, su figura es central, evocando la gratitud de la comunidad por las cosechas y la vida que brinda la tierra. Los movimientos asociados con Pachamama suelen ser reverentes, resaltando la conexión espiritual de las personas con el entorno natural y la importancia de cuidar y honrar la tierra como fuente de sustento y vida.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://www.costumbres.org/wp-content/uploads/2020/04/Danza-Antawara.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Agricultores: Los agricultores en la danza Antawara simbolizan el trabajo arduo y la dedicación que se requiere para cultivar la tierra. A través de sus movimientos, representan las labores de siembra y cosecha, reflejando el esfuerzo colectivo de la comunidad. Su vestimenta, a menudo colorida y tradicional, destaca su identidad cultural y su conexión con la tierra. Estos personajes enfatizan la importancia del trabajo comunitario y el respeto por los ciclos naturales que permiten la producción de alimentos.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://i.ytimg.com/vi/hPQUgbEZNuU/maxresdefault.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Cholos: Los cholos son personajes que representan a los hombres y mujeres de la comunidad, reflejando la cultura y la identidad regional andina. A través de sus danzas, celebran la vida cotidiana, la alegría y la cohesión social. Su vestimenta suele ser rica en colores y adornos que simbolizan su herencia cultural. Los cholos evocan la diversidad de la comunidad y su resiliencia, y sus movimientos reflejan la unidad y la colaboración en las festividades, así como la conexión con las tradiciones ancestrales.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://www.shutterstock.com/editorial/image-editorial/M0TeI75dM9z0M637MjU5ODM=/groups-people-perform-dance-antawaras-during-beginning-440nw-12824939d.jpg" alt="Personaje 4">
+            <div class="text">
+                <p>
+                   Animales: Los personajes que representan animales de la región simbolizan la fauna local y la interconexión entre los seres humanos y la naturaleza. En la danza Antawara, estos personajes pueden imitar los movimientos de animales como llamas o cóndores, simbolizando la armonía con el entorno. La representación de animales también resalta la importancia de la biodiversidad y el respeto por todas las formas de vida que habitan la tierra, recordando a la comunidad su responsabilidad de cuidar y proteger el entorno natural.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://www.researchgate.net/publication/45259321/figure/fig3/AS:400743577210882@1472556122915/figura-4-rebano-de-alpacas-en-el-Parque-nacional-sajama-Provincia-de-oruro-bolivia.png" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza Antawara simboliza la conexión de las comunidades andinas con la Pachamama (Madre Tierra) y la gratitud por las cosechas, reflejando el ciclo de la vida agrícola. A través de sus movimientos y trajes, representa la identidad cultural, la unidad comunitaria y la espiritualidad indígena, destacando la importancia de vivir en armonía con la naturaleza y honrar las tradiciones ancestrales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzlCgg9_ym5V5S--r8aIAEdsmKZI_xzh5RTw&s" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    "Antawara" - Una canción que celebra la danza y su conexión con la naturaleza y la cultura andina.
+"La Cañada" - Un ritmo popular andino que evoca la vida rural y las festividades agrícolas.
+"El Condor Pasa" - Una melodía emblemática que refleja la espiritualidad y la conexión con la fauna andina.
+"Sikuri" - Temas tradicionales que acompañan las danzas y celebraciones, resaltando la cultura andina.
+"La Flor de la Canela" - Aunque es más conocida en otros contextos, su melodía puede adaptarse a las danzas andinas.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

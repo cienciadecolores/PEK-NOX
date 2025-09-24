@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctorcitos</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/maxresdefault (1) (2).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DOCTORCITOS</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 800px;
+    }
+    .ka {
+        position: relative;
+        left: 580px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS DOCTORCITOS</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzr8PikbBxUm8JokfrTkRb3cBVrO3gqZrlew&s" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://www.paucartambo.info/images/danzas/doctorcito/doctorcitos.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Doctorcitos tiene sus raíces en la región andina de Bolivia, particularmente en la cultura del altiplano. Su historia se remonta a la época colonial, cuando los españoles trajeron consigo el sistema de salud y la medicina europea. La danza se originó como una forma de burla y sátira hacia los médicos y las prácticas de salud impuestas por los colonizadores, así como una crítica a la falta de atención médica adecuada para las comunidades indígenas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiFkEHwtdi3O1CaAbvEnmJllSOYg1Ojob1jGoPJ7D3Qj-oUs7pojSHvTDeY8s_Ym7FlWd5c1tBQD_9vnW-w-BNMJWTMHJBoofX67HL0_bru_kGSEBDvN3WTGLvodEWPCNn1YtyCOmpLB8/s640/211248_1_14.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Doctorcitos representa una sátira y crítica social hacia el sistema de salud colonial y la relación entre los médicos y las comunidades indígenas. A través de sus movimientos y vestimenta, los bailarines, vestidos como médicos y pacientes, reflejan la deficiencia y la desigualdad en la atención médica que enfrentaban las comunidades durante la época colonial.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://impresa.lapatria.bo/fotos/02_2023/1078042_1_23.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Wayra Leva: En la danza de los Doctorcitos, Wayra Leva es un personaje que simboliza al viento, a menudo representado con movimientos fluidos y agiles. Su presencia en la danza evoca la naturaleza y la energía que rodea a las comunidades andinas, conectando la espiritualidad con la vida cotidiana. Wayra Leva también puede representar la libertad y la fuerza de la cultura indígena, a medida que los bailarines interactúan con el viento, simbolizando la resistencia y la adaptabilidad de su gente ante las adversidades.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://impresa.lapatria.bo/fotos/02_2023/1078042_2_23.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Doctorcito: El Doctorcito es el personaje principal de la danza, representando a los médicos y la figura de la medicina colonial. Vestido con una bata blanca, estetoscopio y otros accesorios médicos, simboliza la autoridad médica y las prácticas de salud impuestas por los colonizadores. A través de su papel, se burla de la falta de atención adecuada a las comunidades indígenas y critica la desigualdad en el acceso a la salud. Su carácter humorístico y exagerado refleja la resistencia cultural del pueblo andino, utilizando la sátira para resaltar las deficiencias del sistema de salud y las realidades de la vida cotidiana.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmLfgK1JGx7Hy5-Xb32ab0k4zaq7EQt6g2fy0aUBd0GjPYH8jBlq19LWXd2XHOS_gxl486rskXBLUQc44HDJkYcoxWlPDwaO-MrIDRAxJ5U3rFIyHQQRzDvARjmwGOOeExsIZINNMZvNM/w1200-h630-p-k-no-nu/doctorcitos+itos+1.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Secretaria: En la danza de los Doctorcitos, la Secretaria es un personaje que representa el apoyo administrativo y la burocracia en el ámbito médico. Su papel es a menudo humorístico, destacando la organización y el desorden que pueden surgir en un consultorio o hospital. Vestida con una vestimenta que refleja la formalidad del trabajo de oficina, la Secretaria simboliza la relación entre el personal médico y los pacientes. Su presencia en la danza también puede evocar la frustración de las comunidades al enfrentarse a la burocracia y la falta de atención adecuada, añadiendo una capa de sátira y crítica social a la representación.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHSWUZ9up2zkQKWAZBzKaqK2L-JAstVleTYg&s" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Doctorcitos simboliza la crítica y la sátira hacia el sistema de salud colonial y la relación desigual entre médicos y comunidades indígenas. A través de su representación humorística, destaca la falta de atención médica adecuada y las deficiencias del sistema sanitario. También simboliza la resistencia cultural del pueblo andino, utilizando el humor como herramienta para enfrentar la adversidad y mantener viva su identidad. Además, la danza refleja la lucha por el reconocimiento y la dignidad de las comunidades indígenas en el contexto de la historia y la cultura andina. En festivales como el Carnaval de Oruro, se convierte en un símbolo de la herencia cultural y la capacidad de adaptación ante las dificultades.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV3JbzftdItHXA7uMBxmhg3Lm55iUIUPqAbw&s" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                   Los temas musicales que caracterizan la danza de los Doctorcitos suelen incluir ritmos andinos y melodías festivas interpretadas con instrumentos tradicionales como la zampoña, el charango y el bombo. Algunos de los temas más destacados son:
+
+"Doctorcito" - Canción que celebra la figura del Doctorcito, resaltando su papel en la danza.
+"La Cumbia de los Doctorcitos" - Una melodía pegajosa que evoca el humor y la alegría de la danza.
+"Viva el Doctorcito" - Un tema que destaca la figura del médico, con ritmos alegres y festivos.
+"Los Cholos" - Una melodía que puede incluirse en la danza, resaltando la cultura andina.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

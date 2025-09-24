@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicheños</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/sddefault (1).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CHICHEÑOS</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 100px;
+    }
+    .ka {
+        position: relative;
+        left: 20px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS CHICHEÑOS</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAzUFZDILqnjX9BBo65W-_2aqnkjAZ3tixNg&s" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_cqHyicjgDi0LNREXZRlEvN0jQh3f1iKnQ&s" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Chicheños tiene sus raíces en la cultura andina, especialmente en la región de los valles de Bolivia. Se originó como una forma de celebrar y rendir homenaje a la tierra y las tradiciones agrícolas de la comunidad. Su historia está vinculada a la vida rural y a la identidad cultural de los pueblos indígenas, reflejando su conexión con la Pachamama (Madre Tierra).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://cdn.correodelsur.com/img/contents/images_980/2021/11/07/3e63a4f7-8007-48c3-980e-05915df08834.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Chicheños representa la conexión de las comunidades andinas con la tierra y la naturaleza, simbolizando la fertilidad y la gratitud por las cosechas. A través de sus movimientos y trajes coloridos, los bailarines evocan la alegría de la vida rural y celebran la identidad cultural de su comunidad. La danza también resalta la importancia del trabajo agrícola y el esfuerzo colectivo, reflejando el espíritu de unidad y colaboración entre los miembros de la comunidad. En festivales como el Carnaval de Oruro, los Chicheños se convierten en un símbolo de la herencia cultural indígena y de la resistencia ante los desafíos contemporáneos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://static.wixstatic.com/media/1bf1e5_a5ae0bd3313d46df935be89309314348~mv2.jpg/v1/fill/w_526,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1bf1e5_a5ae0bd3313d46df935be89309314348~mv2.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                   Chichero: El Chichero es el personaje principal de la danza, simbolizando la alegría y la celebración de la vida rural. Su vestimenta es colorida y a menudo incluye un sombrero adornado. A través de sus movimientos enérgicos, representa la conexión con la tierra y la importancia de la cosecha en la cultura andina.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqcav98Xr3mCZIjDo_EgLqMnRmHSKHTiqYhQ&s" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Mujer Chichera: Este personaje representa a la mujer trabajadora y fuerte de la comunidad. Su vestimenta es igualmente colorida y refleja la tradición andina. A través de su danza, simboliza la fertilidad, la familia y el papel vital de las mujeres en la vida agrícola y la transmisión de la cultura.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt_DaU49UYuSMwSGD46dkW9jyadVFClQ-O22RsHYwD3vDSkK3SGB4azJHMYMlLYaCe4q0qgxf4kc5alJfl6dATOCV5MKVUhEBEduhcToA6EKEZ2Oq3y8gLX4CceQ6eAIi7m8Gz0Y9KE7s/s1600/carnaval_tupiza2.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Diablito: El Diablito es un personaje festivo que añade un elemento de humor y alegría a la danza. Vestido con un disfraz llamativo, simboliza la dualidad de la vida andina, donde se celebra tanto lo sagrado como lo profano. Su presencia representa la resistencia cultural y la adaptación de las tradiciones a lo largo del tiempo.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdI26xPVlOMx9nkzHHWSQt3E1Y6FOGoSBlKw&s" alt="Personaje 4">
+            <div class="text">
+                <p>
+                    Cholo: Este personaje representa al hombre de la comunidad, simbolizando la fuerza y el trabajo duro en la agricultura. Su vestimenta tradicional refleja la cultura andina y su papel en la danza enfatiza la unidad y la colaboración en las festividades agrícolas. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsyfC74I3lkNgKyhj5DJgF38j_oBnpZWLZg&s" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Chicheños simboliza la conexión con la Pachamama y la gratitud por las cosechas. Representa la alegría de la vida rural, la unidad y el trabajo colectivo de la comunidad. También refleja la espiritualidad andina y la importancia de vivir en armonía con la naturaleza, preservando las tradiciones ancestrales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://discolandia.com.bo/wp-content/uploads/2022/05/grupo-bolivia.jpg" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    Los temas musicales que representan la danza de los Chicheños suelen incluir ritmos andinos interpretados con instrumentos tradicionales como la zampoña, el charango y el bombo. Algunos de los temas más destacados son:
+
+"Chicheño" - Una canción que celebra la danza y la cultura local.
+"La Cañada" - Un ritmo alegre que evoca la vida rural y las festividades agrícolas.
+"Sikuri" - Temas tradicionales que acompañan las danzas andinas.
+"La Flor de la Canela" - Melodía adaptada a danzas locales, reflejando la identidad andina.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

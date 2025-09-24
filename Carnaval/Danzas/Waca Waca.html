@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waca Waca</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/depositphotos_362556570-stock-photo-oruro-oruro-bolivia-february-2018 (1).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WACA WACA</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 800px;
+    }
+    .ka {
+        position: relative;
+        left: 600px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS WACA WACA</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-SwLRwBq9iTxuVSHCQj8z-gHYytm7J9R0OA&s" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://fotosantiguas.diariodemallorca.es/dm-contenido/uploads/2021/05/BORRAS-BIBILONI-JAUME_00406.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza Waca Waca es una expresión cultural de Bolivia, originaria de comunidades aymaras y quechuas. Se remonta a tradiciones ancestrales asociadas a la cosecha y al agradecimiento a la Pachamama por la fertilidad de la tierra. Con el tiempo, ha evolucionado en una representación festiva, especialmente durante el Carnaval de Oruro, donde los danzantes, con trajes coloridos, realizan movimientos alegres que celebran la conexión entre la comunidad y la naturaleza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://www.punomagico.com/image/waca%20waca%2026.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza Waca Waca representa la conexión entre la comunidad y la naturaleza, simbolizando el agradecimiento a la Pachamama por las cosechas y la fertilidad de la tierra. A través de sus movimientos alegres y coloridos, los danzantes expresan la alegría de la vida rural y la importancia de la agricultura en la cultura andina. La danza también refleja la unidad y la identidad de la comunidad, celebrando las tradiciones ancestrales y la riqueza cultural de los pueblos indígenas. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimBbRmQT1PGABt76Fs1qLNzI3-yoNu6a8Dg&s" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    El Jilak'ata: En la danza Waca Waca es el líder de la comunidad, similar a un jefe o autoridad. Viste con trajes tradicionales que destacan su estatus y su papel de guía en la organización social. Su presencia en la danza simboliza el respeto por la jerarquía y el liderazgo dentro de la comunidad andina.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://i.pinimg.com/originals/b4/35/92/b43592cbba5162c66545ec17a5d03465.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    La Mama T'alla: En la danza Waca Waca es una figura femenina de gran autoridad y respeto, representando a una líder comunitaria o matriarca. Su vestimenta tradicional simboliza su sabiduría y rol protector dentro de la comunidad. En la danza, la mama t'alla refleja la importancia de las mujeres en la preservación de la cultura y las tradiciones andinas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirf-w0jBpenfF56M_k1pgFTAR9CUzveeR-YgD0nL3MmIKtXVrqP9Bkc7Jee7b5Egan2ON5CpkdRY0wVnGx5fQTXFQv9H2f_CbheJn4419_Q7QpHzvrSC8lMnTlQ6xadJtXDloDNC8NBCs/s1600/wacas.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   El Torero: En la danza Waca Waca es una figura satírica que parodia las corridas de toros introducidas durante la época colonial. Representa la influencia extranjera y es ridiculizado a través de movimientos exagerados y cómicos. Su presencia en la danza critica y burla esta práctica, destacando la resistencia cultural de las comunidades indígenas ante la imposición de tradiciones foráneas.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://live.staticflickr.com/2726/4341541064_1a60b6718c_b.jpg" alt="Personaje 4">
+            <div class="text">
+                <p>
+                   Las Lecheras: En la danza Waca Waca representan a mujeres campesinas encargadas de la producción y distribución de leche. Visten trajes tradicionales con jarras de leche, simbolizando la vida rural y el trabajo cotidiano de las comunidades andinas. En la danza, sus movimientos reflejan la importancia de la agricultura y el ganado en la subsistencia y economía local.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjR_as88ZeeI2TJC6Swx645Na5tQaHoZkeH6_2O-icN2BSHaQEYwID8GrRD0mst1ll1Lypa5cFRAHJ9TjNGyHpv8x4aaPIYr40raWxdgb77QU1VB5W4CoyG4e5vVrvHpDTbwet6YHWd2oQ/w1200-h630-p-k-no-nu/tawaku.jpg" alt="Personaje 5">
+            <div class="text">
+                <p>
+                  La Pastora o Imilla: En la danza Waca Waca es una joven campesina que cuida el ganado, representando la juventud y la vida rural. Su vestimenta es colorida y tradicional, reflejando su conexión con la tierra y las labores cotidianas. En la danza, la pastora simboliza la alegría, el trabajo y el rol de las mujeres jóvenes en la comunidad andina, destacando la preservación de las costumbres rurales.
+                </p>
+            </div>
+        </div>
+<div class="content text-right">
+            <img src="https://i.pinimg.com/originals/a5/6a/dc/a56adc8f5867b694e918d41964709cb6.jpg" alt="Personaje 6">
+            <div class="text">
+                <p>
+                   La Española: En la danza Waca Waca representa la influencia colonial española, generalmente con un toque satírico. Su vestimenta es lujosa, evocando la moda europea de la época colonial. A través de movimientos exagerados, la española es ridiculizada, simbolizando la resistencia y crítica de las comunidades indígenas hacia las imposiciones y costumbres extranjeras.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://live.staticflickr.com/4066/4683393489_b67c6c1f23_b.jpg" alt="Personaje 5">
+            <div class="text">
+                <p>
+                  El K'usillo: En la danza Waca Waca es un personaje bufonesco y pícaro que actúa como un payaso o bufón. Viste trajes coloridos y tiene un comportamiento juguetón, realizando movimientos ágiles y cómicos. Su función en la danza es divertir y entretener al público, pero también simboliza la astucia y la sabiduría popular, desafiando el orden establecido con su irreverencia y burlas.
+                </p>
+            </div>
+        </div>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvki6XkQIpob1S0dm-cvYFNlaLSMpp1XEIw&s" alt="Personaje 7">
+            <div class="text">
+                <p>
+                   El Toro: En la danza Waca Waca es una figura central que simboliza el animal en las corridas de toros, introducidas durante la época colonial. Representa la fuerza bruta y la dominación, pero también es objeto de burla y sátira, aludiendo a la resistencia indígena ante las imposiciones coloniales. En la danza, el toro es interpretado con movimientos exagerados y dramáticos, convirtiéndose en un símbolo de lucha y desafío.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEX4NHYEO04ZWKNN4LVKt1SH9Yi0Q1Z2UCBA&s" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    En el Carnaval de Oruro, la simbología de la danza Waca Waca refleja la resistencia cultural de los pueblos indígenas frente a la influencia colonial española. El toro representa la opresión y la fuerza bruta de la colonización, mientras que personajes como el torero y la española son figuras satíricas que critican las costumbres impuestas, como las corridas de toros.
+                    Por otro lado, personajes como el jilak'ata, la mama t'alla, y las lecheras simbolizan la vida rural, el liderazgo comunitario, y la conexión con la tierra y las tradiciones andinas. El k'usillo, con su papel de bufón, añade un elemento de irreverencia, burlándose del orden establecido y transmitiendo sabiduría popular.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYhvJ2Jky3Uo1e9wMv4NWhS7-kY_JAbCMIqw&s" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    "Waca Waca": Un tema emblemático que marca el tono alegre y burlesco de la danza.
+"Torito Bravo": Melodía que acompaña las representaciones del toro, destacando su energía y fuerza.
+"Baile de las Lecheras": Un ritmo más suave que acompaña el trabajo de las mujeres campesinas, mostrando la vida rural.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+  <title>Figuras geométricas — Pixel Art 8-bit</title>
+  <style>
+  :root{
+    --bg:#0b1020; --card:#0f1724; --accent:#64d2ff; --muted:#9aa6b2; --glass: rgba(255,255,255,0.03);
+    --pixel-size:12px;
+  }
+  *{box-sizing:border-box}
+  body{
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial;
+    margin:0;
+    background:linear-gradient(180deg,#061024 0%, #081226 100%);
+    color:#e6eef6;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px;
+    overflow:hidden;
+    background-image: url(https://i.gifer.com/7qhk.gif);
+    background-size: cover;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url("C:/Users/HP HOME/Documents/Página web código y ejemplo/index/Crayolas.png");
+    background-position-y:26px;
+    background-position-x: 19px;
+    border-radius: 30px;
+}
+        header nav a {
+            color: darkred;
+            text-decoration: ;
+            margin: 10px;
+        }
+  .panel {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 0;
+    width: 120%;
+    margin-left: -100px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 3px;
+    background: linear-gradient(
+      270deg,
+      red,
+      orange,
+      yellow,
+      lime,
+      cyan,
+      blue,
+      violet,
+      red
+    );
+    background-size: 400% 400%;
+    animation: rainbow 8s linear infinite;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .app{width:100%; max-width:1080px; display:grid; grid-template-columns:260px 1fr; gap:84px}
+  .panel{background:var(--card); border-radius:14px; padding:18px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.03); width: 120%; margin-left: -100px}
+
+  .menu h2{margin:0 0 12px 0; font-size:18px}
+  .menu-list{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    max-height:70vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-right:6px;
+  }
+  .menu-list::-webkit-scrollbar{width:8px}
+  .menu-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.2); border-radius:6px}
+  .menu-list::-webkit-scrollbar-track{background:transparent}
+
+  .menu-item{background:var(--glass); padding:10px; border-radius:10px; display:flex; gap:10px; align-items:center; cursor:pointer; transition:transform .08s ease, background .12s; border:1px solid rgba(255,255,255,0.02)}
+  .menu-item:hover{transform:translateY(-2px)}
+  .menu-item.active{background:linear-gradient(90deg, rgba(100,210,255,0.08), rgba(100,210,255,0.02)); box-shadow: inset 0 -1px 0 rgba(255,255,255,0.02); font-size: 20px}
+
+  .label{flex:1}
+  .small{font-size:13px; color:var(--muted)}
+
+  .content{padding:10px 18px; background-image: url(https://img.freepik.com/vector-premium/patron-costuras-signos-matematicos-mas-menos-puntos-etc-fondo-negro_652994-1075.jpg);}
+  .shape-title{display:flex; justify-content:space-between; align-items:center}
+  .shape-title h3{margin:0}
+  .shape-body{display:grid; grid-template-columns:220px 1fr; gap:18px; margin-top:18px; align-items:start}
+
+  .pixel-box{width: calc(var(--pixel-size) * 16); height: calc(var(--pixel-size) * 16); background:#0c1220; border-radius:8px; display:flex; align-items:center; justify-content:center; padding:10px}
+  .pixel-svg{width: calc(var(--pixel-size) * 12); height: calc(var(--pixel-size) * 12); image-rendering: pixelated; shape-rendering:crispEdges}
+  .info p{margin:8px 0}
+  .formula{background: #001; padding:10px; border-radius:8px; font-family:monospace; font-size:14px}
+
+  @media (max-width:780px){
+    .app{grid-template-columns:1fr;}
+    .shape-body{grid-template-columns:1fr}
+    .pixel-box{justify-content:flex-start}
+  }
+  .label, p, h1, h2, .formula div {
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .formula div {
+    font-size: 30px;
+  }
+
+  #shape-desc {
+    background: #001;
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  #shape-desc span {
+    background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Coral Pixels", serif;
+    font-size: 1.2em;
+  }
+  #backButton {
+    position: absolute;
+    top: 475px;
+    left: 1100px;
+    font-family: "Coral Pixels", serif;
+    background-color: black;
+    background: linear-gradient(to right, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid red;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 40px;
+  }
+  #backButton:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  #backButton {
+    background: linear-gradient(to right, reds);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: latido 2s infinite;
+    font-family: "Coral Pixels", serif;
+  }
+  .osito {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.osito:hover {
+    transform: scale(1.03);
+}
+
+.pixel2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    height: 50%;
+    margin-right: -935px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.pixel2:hover {
+    transform: scale(1.03);
+}
+  </style>
+
+</head>
+<body>
+
+  <button id="backButton" onclick="history.back()"><a href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\figuras menú.html">Atrás</a></button>
+  <header>
+    <img class="osito" border: 5px  src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo PEK NOX.png" width="150">
+    <img class="pixel2" border: 5px  src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo de mi cole.png" width="150">
+        <nav>
+    </header>
+  <main class="app">
+    <aside class="panel menu">
+      <h2>Figuras (menú pixel art)</h2>
+      <div class="menu-list" role="list">
+        <button class="menu-item active" data-shape="cuadrado" aria-pressed="true">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#0c1220"/><rect x="6" y="6" width="20" height="20" fill="#74f1c8"/></svg>
+          <div class="label"><div style="font-weight:600">Cuadrado</div><div class="small">Lados iguales</div></div>
+        </button>
+        <button class="menu-item" data-shape="rectangulo">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#0c1220"/><rect x="4" y="10" width="24" height="12" fill="#ffd166"/></svg>
+          <div class="label"><div style="font-weight:600">Rectángulo</div><div class="small">Lados opuestos iguales</div></div>
+        </button>
+        <button class="menu-item" data-shape="triangulo">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><polygon points="16,4 28,28 4,28" fill="#ff6b6b"/></svg>
+          <div class="label"><div style="font-weight:600">Triángulo</div><div class="small">3 lados</div></div>
+        </button>
+        <button class="menu-item" data-shape="circulo">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="#a78bfa"/></svg>
+          <div class="label"><div style="font-weight:600">Círculo</div><div class="small">Radio constante</div></div>
+        </button>
+        <button class="menu-item" data-shape="pentagono">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><polygon points="16,4 28,12 23,28 9,28 4,12" fill="#f472b6"/></svg>
+          <div class="label"><div style="font-weight:600">Pentágono</div><div class="small">5 lados</div></div>
+        </button>
+        <button class="menu-item" data-shape="hexagono">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><polygon points="8,8 24,8 30,16 24,24 8,24 2,16" fill="#ffd6a5"/></svg>
+          <div class="label"><div style="font-weight:600">Hexágono</div><div class="small">6 lados</div></div>
+        </button>
+        <button class="menu-item" data-shape="octagono">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><polygon points="10,2 22,2 30,10 30,22 22,30 10,30 2,22 2,10" fill="#4ade80"/></svg>
+          <div class="label"><div style="font-weight:600">Octágono</div><div class="small">8 lados</div></div>
+        </button>
+        <button class="menu-item" data-shape="estrella">
+          <svg class="pixel-svg" viewBox="0 0 32 32"><polygon points="16,2 20,12 30,12 22,18 25,28 16,22 7,28 10,18 2,12 12,12" fill="#facc15"/></svg>
+          <div class="label"><div style="font-weight:600">Estrella</div><div class="small">Forma estrellada</div></div>
+        </button>
+      </div>
+    </aside>
+
+    <section class="panel content" aria-live="polite">
+      <div class="shape-title"><h3 id="shape-name">Cuadrado</h3><div class="small" id="shape-short">Lados iguales</div></div>
+      <div class="shape-body">
+        <div>
+          <div class="pixel-box" aria-hidden>
+            <svg id="shape-art" class="pixel-svg" viewBox="0 0 32 32" role="img"><rect width="32" height="32" fill="#0c1220"/><rect x="6" y="6" width="20" height="20" fill="#74f1c8"/></svg>
+          </div>
+        </div>
+        <div class="info">
+          <p id="shape-desc"><span>Un cuadrado tiene cuatro lados iguales y cuatro ángulos rectos (90°).</span></p>
+          <div class="formula"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const shapes = {
+      cuadrado:{name:'Cuadrado',short:'Lados iguales',desc:'Un cuadrado tiene cuatro lados iguales y cuatro ángulos rectos (90°).',art:`<rect width='32' height='32' fill='#0c1220'/><rect x='6' y='6' width='20' height='20' fill='#74f1c8'/>`,formulas:['Área: A = l²','Perímetro: P = 4l']},
+      rectangulo:{name:'Rectángulo',short:'Lados opuestos iguales',desc:'Un rectángulo tiene cuatro ángulos rectos; lados opuestos son iguales.',art:`<rect width='32' height='32' fill='#0c1220'/><rect x='4' y='10' width='24' height='12' fill='#ffd166'/>`,formulas:['Área: A = b × h','Perímetro: P = 2(b+h)']},
+      triangulo:{name:'Triángulo',short:'3 lados',desc:'Polígono con tres lados y tres vértices.',art:`<polygon points='16,4 28,28 4,28' fill='#ff6b6b'/>`,formulas:['Área: A = (b × h)/2','Perímetro: suma de lados']},
+      circulo:{name:'Círculo',short:'Radio constante',desc:'Conjunto de puntos equidistantes de un centro.',art:`<circle cx='16' cy='16' r='10' fill='#a78bfa'/>`,formulas:['Área: A = πr²','Perímetro: C = 2πr']},
+      pentagono:{name:'Pentágono',short:'5 lados',desc:'Polígono con cinco lados y cinco ángulos.',art:`<polygon points='16,4 28,12 23,28 9,28 4,12' fill='#f472b6'/>`,formulas:['Área (regular) = (1/4)√(5(5+2√5))a²','Perímetro = 5a']},
+      hexagono:{name:'Hexágono',short:'6 lados',desc:'Polígono regular de seis lados.',art:`<polygon points='8,8 24,8 30,16 24,24 8,24 2,16' fill='#ffd6a5'/>`,formulas:['Área = (3√3/2)a²','Perímetro = 6a']},
+      octagono:{name:'Octágono',short:'8 lados',desc:'Polígono regular de ocho lados.',art:`<polygon points='10,2 22,2 30,10 30,22 22,30 10,30 2,22 2,10' fill='#4ade80'/>`,formulas:['Área = 2(1+√2)a²','Perímetro = 8a']},
+      estrella:{name:'Estrella',short:'Forma estrellada',desc:'Polígono en forma de estrella de cinco puntas.',art:`<polygon points='16,2 20,12 30,12 22,18 25,28 16,22 7,28 10,18 2,12 12,12' fill='#facc15'/>`,formulas:['No hay fórmula única','Depende del diseño']}
+    };
+
+    function setActive(button){
+      document.querySelectorAll('.menu-item').forEach(b=>{
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed','false')
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-pressed','true')
+    }
+    function renderShape(key){
+      const s = shapes[key]; if(!s) return;
+      document.getElementById('shape-name').textContent=s.name;
+      document.getElementById('shape-short').textContent=s.short;
+      document.getElementById('shape-desc').innerHTML = `<span>${s.desc}</span>`;
+      const formulaBox=document.querySelector('.formula'); formulaBox.innerHTML='';
+      s.formulas.forEach(f=>{const div=document.createElement('div');div.textContent=f;formulaBox.appendChild(div)});
+      const art=document.getElementById('shape-art'); art.innerHTML=s.art;
+    }
+    document.querySelectorAll('.menu-item').forEach(btn=>{
+      btn.addEventListener('click',()=>{setActive(btn); renderShape(btn.dataset.shape);});
+    });
+    renderShape('cuadrado');
+  </script>
+</body>
+</html>

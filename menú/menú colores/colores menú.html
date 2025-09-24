@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+<title>Menú</title>
+<style>
+  :root{
+    --bg1: #0f1424;
+    --bg2: #1b2547;
+    --text:#eaf2ff;
+    --shadow: rgba(0,0,0,.45);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin: 0;
+    background-image: url(https://i.gifer.com/C0mh.gif);
+    background-size: 120%;
+    background-position-y: 70px;
+    background-position-x: -120px;
+    color:var(--text);
+    overflow:hidden;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50%;
+    background-image: url("C:/Users/HP HOME/Documents/Página web código y ejemplo/index/Crayolas.png");
+    background-position-y:26px;
+    background-position-x: 19px;
+    border-radius: 30px;
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+}
+        header nav a {
+            color: darkred;
+            text-decoration: ;
+            margin: 10px;
+        }
+
+  .stage{display:grid; place-items:center; height:100vh;}
+
+  /* Título */
+  .title{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+  }
+  .title h1{margin:.2rem 0 .4rem; font-size: 40px;}
+  .title p{margin:0; opacity:.8; font-size: 25px;}
+  
+.wrap{
+  position:relative;
+  width:min(800px,90vw);
+  display:flex;
+  justify-content:center; 
+  align-items:center;
+  margin-top:-180px;
+  gap:40px;
+}
+
+  .caja{
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 15px;
+    background:black;
+    padding:0;
+    z-index:0;
+    min-height:60px;
+    transition: transform 0.3s ease;
+  }
+
+  .caja::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:15px;
+    padding:3px;
+    background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    z-index:-1;
+  }
+
+  .caja:hover {
+    transform: scale(1.08);
+  }
+  @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+  .btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 24px;
+    background:transparent;
+    border:none;
+    border-radius:12px;
+    font-family: "Coral Pixels", serif;
+    font-size:35px;
+    min-width:140px;
+    text-align:center;
+    z-index:1;
+
+    background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: latido 2s infinite;
+  }
+  h1, p {
+    background: linear-gradient(to right, red, orange, gold, limegreen, skyblue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: latido 2s infinite;
+    font-family: "Coral Pixels", serif;
+  }
+
+.caja:nth-child(1){--ty:-20px;}
+.caja:nth-child(2){--ty:20px;}
+.caja:nth-child(3){--ty:-20px;}
+.caja:nth-child(4){--ty:20px;}
+
+.caja{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 15px;
+  background:black;
+  padding:0;
+  z-index:0;
+  min-height:60px;
+  transition: transform 0.3s ease;
+  transform: translateY(var(--ty)) scale(1);
+}
+
+.caja:hover{
+  transform: translateY(var(--ty)) scale(1.08);
+}
+.osito {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 160px;
+    text-align: center;
+    height: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.osito:hover {
+    transform: scale(1.03);
+}
+
+.pixel2 {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 160px;
+    margin-right: -935px;
+    transition: transform 0.3s;
+    position: relative;
+    left: 15px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background: 
+        linear-gradient(white, white) padding-box, 
+        linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet) border-box;
+}
+
+.pixel2:hover {
+    transform: scale(1.03);
+}
+.oruro:hover {
+            transform: scale(1.03);
+        }
+        .oruro {
+            transition: transform 0.3s;
+            position: relative;
+            left: 10px;
+        }
+        .tablita {
+                    border-color: skyblue;
+                    border-radius: 20px;
+                 }
+                 .dropdown-button:hover, .tablita:hover {
+            transform: scale(1.03);
+        }
+        .dropdown-button, .tablita {
+            transition: transform 0.3s;
+        }
+</style>
+</head>
+<body>
+  <header>
+    <img class="osito" src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo PEK NOX.png" width="150">
+    <img class="pixel2" src="C:\Users\HP HOME\Documents\Página web código y ejemplo\index\logo de mi cole.png" width="150">
+        <nav>
+    </header>
+  <main class="stage">
+    <div class="title">
+      <h1>Menú principal (Colores)</h1>
+      <p>Selecciona una opción</p>
+    </div>
+    <section class="wrap">
+      <div class="caja"><a class="btn" href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\colores primarios.html">Colores primarios</a></div>
+      <div class="caja"><a class="btn" href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\colores primarios y secundarios.html">Colores secundarios</a></div>
+      <div class="caja"><a class="btn" href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\colores primarios, secundarios y terciarios.html">Colores terciarios</a></div>
+      <div class="caja"><a class="btn" href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\menú colores\pintar.html">¡Pinta!</a></div>
+    </section>
+    </main>
+    <style>
+      .wrap2{
+  position:relative;
+  width:min(800px,90vw);
+  display:flex;
+  justify-content:center; 
+  align-items:center;
+  margin-top:-180px;
+  gap:40px;
+
+  .caja2{
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 15px;
+    background:black;
+    padding:0;
+    z-index:0;
+    min-height:60px;
+    transition: transform 0.3s ease;
+  }
+
+  .caja2::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:15px;
+    padding:3px;
+    background: linear-gradient(to right, red);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    z-index:-1;
+  }
+
+  .btn2 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 24px;
+    background:transparent;
+    border:none;
+    border-radius:12px;
+    font-family: "Coral Pixels", serif;
+    font-size:35px;
+    min-width:140px;
+    text-align:center;
+    z-index:1;
+
+    background: linear-gradient(to right, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.caja2:nth-child(1){--ty:-120px;}
+
+
+.caja2{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 15px;
+  background:black;
+  padding:0;
+  z-index:0;
+  min-height:60px;
+  transition: transform 0.3s ease;
+  transform: translateY(var(--ty)) scale(1);
+  margin-right: -550px;
+}
+
+.caja2:hover{
+  transform: translateY(var(--ty)) scale(1.08);
+}
+    </style>
+    <section class="wrap2">
+    <div class="caja2"><a class="btn2" href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\Menú interactivo.html">Regresar al menú principal</a></div>
+  </section>
+</body>
+</html>

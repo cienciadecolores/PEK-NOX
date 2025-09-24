@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zampoñeros</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/samponeros-en-oruro (1).jpeg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ZAMPOÑEROS</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 800px;
+    }
+    .ka {
+        position: relative;
+        left: 580px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS ZAMPOÑEROS</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://impresa.lapatria.bo/fotos/03_2014/174818_1_01.jpg" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://i.ytimg.com/vi/n2wlozO7mcY/maxresdefault.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Zampoñeros tiene su origen en las comunidades andinas, donde se utilizaban las zampoñas para invocar la naturaleza y celebrar momentos importantes, como las cosechas y festividades religiosas. Los zampoñeros, músicos que tocan la zampoña, representan la conexión espiritual con los elementos naturales y la vida comunitaria. A lo largo de la historia, esta danza ha sido una forma de preservar la identidad cultural andina, manteniendo vivas sus tradiciones musicales y su relación con la Pachamama (Madre Tierra).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrifcZOAmFy3s7zAAlmJ5lgKxn8H93QIDNLQ&s" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Zampoñeros representa la conexión profunda entre las comunidades andinas y la naturaleza, simbolizando el viento, la tierra y los ciclos agrícolas. Los zampoñeros, con sus instrumentos, evocan el sonido del viento y la armonía con los elementos naturales, destacando la importancia de la música tradicional en la vida espiritual y social de los pueblos andinos. A través de sus melodías, la danza celebra la unidad comunitaria, la fertilidad de la tierra y el respeto por la Pachamama, resaltando la relación sagrada entre el ser humano y la naturaleza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://impresa.lapatria.bo/fotos/02_2023/1078041_1_23.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Zampoñero: El Zampoñero es el músico principal de la danza, encargado de tocar la zampoña, un instrumento de viento tradicional andino. Representa la conexión con la naturaleza, ya que el sonido de la zampoña evoca el viento y la espiritualidad de las montañas. Su papel en la danza es fundamental para guiar el ritmo y transmitir la armonía entre la comunidad y los elementos naturales.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bEMeoHcX-09d5G4Zf7paJYtpEHx9Vk9QQA&s" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Mujeres: En la danza de los Zampoñeros, las mujeres simbolizan la fertilidad, el trabajo comunitario y la conexión con la tierra. A menudo vestidas con trajes tradicionales, representan el papel vital de las mujeres en la cultura andina, tanto en las labores agrícolas como en la preservación de las costumbres. Su participación en la danza refuerza la unidad comunitaria y la armonía con la naturaleza.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://carlosbiggemannphotography.com/cdn/shop/products/Feel-the-rythm_201_800x.jpg?v=1531181337" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Karacacheros: Los Karacacheros son personajes que acompañan a los zampoñeros en la danza, añadiendo dinamismo y energía a la representación. Generalmente, representan la alegría y el espíritu festivo de la comunidad, con movimientos ágiles y un papel que evoca la fuerza y vitalidad de los pueblos andinos. Su presencia también puede simbolizar la conexión entre las tradiciones ancestrales y las celebraciones actuales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRp8w2JW5qbD4qeDil_FbMB0L9ybgfav8erg&s" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Zampoñeros simboliza la conexión espiritual y cultural de las comunidades andinas con la naturaleza, especialmente con el viento y la tierra. A través de la música de las zampoñas, evoca el sonido del viento y la armonía con los elementos naturales, reflejando el respeto por la Pachamama (Madre Tierra). También simboliza la unidad comunitaria y la celebración de los ciclos agrícolas, representando la fertilidad, la vida en las montañas y la importancia de preservar las tradiciones ancestrales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://i.ytimg.com/vi/9FvuNVMgp4A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDFeIO2tQDYgUTX9kPuSKEcq0ROkQ" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    "Wayñus" - Canciones andinas que acompañan las festividades comunitarias, con ritmos suaves y melódicos.
+"Sikuris" - Un conjunto de música tradicional donde las zampoñas destacan, simbolizando la unión y el trabajo en equipo.
+"Tarkas" - Melodías interpretadas con instrumentos de viento como la tarka, evocando la espiritualidad y el viento andino.
+"Pinquillos" - Música que refleja la relación entre el hombre y la naturaleza, caracterizada por ritmos alegres y festivos.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

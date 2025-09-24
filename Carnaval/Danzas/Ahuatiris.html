@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahuatiris</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/ahuatiris (1).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AHUATIRIS</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 100px;
+    }
+    .ka {
+        position: relative;
+        left: 20px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS AHUATIRIS</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tX60-T74D8lcTAIbrC3TTokLkTefGyfRvw&s" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://impresa.lapatria.bo/fotos/02_2013/134661_1_09.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Ahuatiris tiene su origen en la cultura indígena de Bolivia, específicamente entre las comunidades del altiplano. Esta danza celebra la vida y el trabajo en el campo, así como las tradiciones y creencias de las comunidades andinas. Los Ahuatiris son conocidos como los guardianes de las cosechas y los campos, y su danza es una forma de agradecer a la Pachamama (Madre Tierra) por los frutos de la tierra y pedir por buenas cosechas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA1F4CM7xBJpeLoCpmCoQyJGm_CZJVKBlXGg&s" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Ahuatiris representa la conexión de las comunidades andinas con la naturaleza y su relación con la agricultura. A través de sus movimientos y vestimenta colorida, simboliza la celebración de la vida rural, el trabajo en el campo y el agradecimiento a la Pachamama (Madre Tierra) por las cosechas. La danza también refleja la identidad cultural de los pueblos indígenas, destacando su espiritualidad, tradiciones y la importancia de la comunidad en la preservación de su herencia. En festivales como el Carnaval de Oruro, la danza se convierte en una expresión de orgullo cultural y una celebración de la resistencia y resiliencia de estas comunidades a lo largo del tiempo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://impresa.lapatria.bo/fotos/03_2011/62980_1_05.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Ahuatiri: Este personaje es el guardián de las cosechas y la naturaleza, simbolizando la sabiduría y el conocimiento ancestral sobre la agricultura. Su papel es fundamental en la danza, ya que guía a los demás personajes y representa la protección de las tierras cultivadas. El Ahuatiri refleja la espiritualidad de la comunidad, mostrando cómo la conexión con la Pachamama (Madre Tierra) es vital para el bienestar colectivo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://impresa.lapatria.bo/fotos/02_2016/247102_1_06.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Mujer Ahuatiri: Representa la fertilidad, la vida y la importancia de las mujeres en la agricultura. Este personaje destaca el papel esencial de la mujer en las labores del campo, así como en el cuidado de la familia y la transmisión de tradiciones. Su presencia en la danza simboliza el respeto y la valoración de las contribuciones femeninas a la comunidad, y su vestimenta colorida refleja la alegría y el orgullo por su papel en la vida rural.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://www.boletomachupicchu.com/gutblt/wp-content/uploads/2020/10/chasquis.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Chasqui: Este personaje simboliza el mensajero de la comunidad, responsable de la comunicación y el intercambio de noticias entre grupos. Su figura resalta la importancia de la colaboración y la unidad en la vida comunitaria. El Chasqui, con su agilidad y energía, representa la rapidez con la que se transmiten los mensajes, un aspecto vital para la cohesión social y la organización en el trabajo agrícola.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://impresa.lapatria.bo/fotos/02_2016/247102_2_06.jpg" alt="Personaje 4">
+            <div class="text">
+                <p>
+                   Pastor: Representa la conexión con la ganadería y la vida pastoral en las montañas. Este personaje refleja la labor diaria de los pastores, quienes cuidan de los animales y contribuyen a la economía rural. Su presencia en la danza simboliza la armonía entre los seres humanos y la naturaleza, así como la importancia de la ganadería en la cultura andina. El Pastor enfatiza el respeto por los recursos naturales y el papel de los animales en la vida cotidiana de la comunidad.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfV_kecKT3vrP_SrfzE7XBc82ctA0OoQ8FQ&s" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Ahuatiris simboliza la conexión de la comunidad andina con la naturaleza, la agricultura y la espiritualidad. Representa la relación sagrada entre la comunidad y la Pachamama (Madre Tierra), resaltando la importancia de agradecer por las cosechas y pedir por buenas temporadas agrícolas. A través de sus personajes, la danza destaca la cooperación, el esfuerzo colectivo y la unidad de la comunidad en el trabajo agrícola.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ntFGGxQijtqdXJKBbCLl0Oazp_5in1n9Eg&s" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    Los ritmos musicales que caracterizan la danza de los Ahuatiris incluyen melodías tradicionales andinas que evocan la vida agrícola y la espiritualidad de las comunidades. Algunos de los temas musicales más representativos son:
+
+"Ahuatiri" - Una canción emblemática que celebra la danza y su conexión con la agricultura y la naturaleza.
+"Sikuri" - Ritmos de sikuris que aportan una energía festiva y vibrante a las presentaciones, resaltando la alegría de la comunidad.
+"Huayño" - Un ritmo característico que acompaña las danzas tradicionales andinas, creando un ambiente alegre y festivo.
+"Canto a la Pachamama" - Melodía que rinde homenaje a la Madre Tierra, reflejando la espiritualidad y el respeto hacia la naturaleza.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

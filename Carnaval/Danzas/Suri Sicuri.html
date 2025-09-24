@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suri Sicuri</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/maxresdefault (1).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SURI SICURI</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 800px;
+    }
+    .ka {
+        position: relative;
+        left: 600px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DEL SURI SICURI</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGHVRED--nryDkUZkWKfv26Fu9oTuoErKow&s" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Suri_Sicuri_Bolivia.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza Suri Sicuri es una manifestación cultural andina de Bolivia, especialmente en La Paz y Oruro, que simboliza la vida de las aves suri (avestruz) y su migración. Los bailarines, generalmente hombres, visten trajes coloridos que imitan a estas aves y realizan movimientos que reflejan la vida rural y el trabajo en el campo. Se ejecuta en festividades, como el Carnaval de Oruro, y representa la identidad cultural y la conexión con la naturaleza, rindiendo homenaje a las tradiciones ancestrales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvgdsXwxHyM-PIBLW-rT0fUbpj87hkCeaWeXWXtQZDa36VQvfWWQ7kw2iFbnjHXJ7RtNDCrsO1dvAuW9AZWW7znyh6V7lINspWGEJLp_B448v5uBICMWc7-j4AcMNwdxVL3dN1s2Uaaow1/s1600/1+trilogia.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza Suri Sicuri representa la vida de las aves suri (avestruz) y simboliza la libertad, la migración y la conexión con la naturaleza. A través de sus movimientos, los bailarines evocan tanto el vuelo de las aves como la vida cotidiana en las comunidades rurales andinas. También refleja la espiritualidad y la cosmovisión indígena, destacando la importancia de la comunidad y el trabajo en el campo. En las festividades, la danza se convierte en un medio para preservar la identidad cultural y honrar las tradiciones ancestrales. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://www.eabolivia.com/images/stories/plus/suris-sikuris.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Suris: En la danza Suri Sicuri, los "suris" son personajes que representan a las aves suri (avestruz). Los bailarines visten trajes coloridos que imitan a estas aves y realizan movimientos que evocan su vuelo y migración, simbolizando la libertad y la conexión con la naturaleza. Su presencia resalta la importancia de la fauna andina en la cosmovisión indígena.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinn6j28BycT3w8n_Yc57_t9YeB9vFYfGLPhAl1QbMTaAUeztigijpbJ5_UBlIkDYo2-TNZPY3SvmmCIoO8bRBMg5OmYZtPVdBXoqX26xWJS3sSwaBb2j42Q8-brcGf8jqMCmclictRVQ0/s1600/IMG.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Jach'a Suris: En la danza Suri Sicuri, los "jach'a suris" representan a los suris (avestruz) en su forma más grande y majestuosa. Simbolizan la fuerza y la sabiduría de la naturaleza, y los bailarines visten trajes elaborados que destacan su grandeza, reforzando la conexión con la tierra y la identidad cultural andina.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://i.ytimg.com/vi/E4GMbAyL9A8/maxresdefault.jpg" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Imillas: En la danza Suri Sicuri, las "imillas" son los personajes femeninos que representan a las jóvenes del campo. Visten trajes coloridos y adornos tradicionales, simbolizando la fertilidad y la alegría de la vida rural. Su danza destaca la importancia de las mujeres en la comunidad y su conexión con la naturaleza, complementando el simbolismo de los suris en la danza.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://i.ytimg.com/vi/y5G1-PuU5So/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZYIaGRYLiiyLbt2WLN-iVJPCTlQ" alt="Personaje 4">
+            <div class="text">
+                <p>
+                   Mamalas: En la danza Suri Sicuri, las "mamalas" son los personajes que representan a las mujeres mayores o matriarcas de la comunidad. Visten trajes tradicionales y simbolizan la sabiduría, la experiencia y la conexión con las tradiciones ancestrales. Su presencia en la danza resalta el papel de las mujeres en la transmisión de la cultura y el cuidado de la comunidad, integrando elementos de la vida cotidiana en la celebración. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmmyyhsLLhnbaWE6pYhwlvJYus68WNQjXTIVEy0YqTiKPhGauaFZU7vjZKDGNlNNYOprduXpKcXdNOLN-e__tTUXE4y8CpNzxVDkNZebE900IIm8L9ET97wZcdCD-vTAcgd13kHeB1jRk/s1600/CARATULA+SURI+LIBRO+2.JPG" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                    La danza Suri Sicuri en el Carnaval de Oruro simboliza la conexión con la naturaleza, la libertad y la identidad cultural andina. Representa la vida de las aves suri (avestruz) y su migración, evocando la relación entre los seres humanos y el entorno natural. Además, la danza celebra la unidad de la comunidad y la importancia del trabajo agrícola, integrando elementos de la cosmovisión indígena. En el contexto del Carnaval, la Suri Sicuri es una forma de rendir homenaje a las tradiciones ancestrales y reforzar el sentido de pertenencia cultural.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://gp1.wac.edgecastcdn.net/802892/http_public_production/artists/images/3889837/original/crop:x0y0w3200h2053/hash:1467511868/1436897027_Andino-27.jpg?1467511868" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                   Los temas musicales que caracterizan la danza Suri Sicuri suelen incluir ritmos andinos y son interpretados con instrumentos como la zampoña, el charango y el bombo. Algunos de los temas más representativos son:
+
+"Suri Sicuri" - Canciones específicas que homenajean a la danza y sus significados culturales.
+"Los Suris" - Temas que resaltan la figura del avestruz y su simbolismo.
+"La Cañada" - Un ritmo popular en festividades.
+"Sikuri" - Melodías tradicionales que evocan la vida rural y la conexión con la naturaleza.
+"Yaraví" - Canciones melancólicas que pueden acompañar la danza, reflejando su espiritualidad.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>

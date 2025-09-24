@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
+<title>Lienzo para Pintar</title>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url(https://media.forgecdn.net/avatars/thumbnails/1185/153/256/256/638759134508086741_animated.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50%;
+    background-image: url("C:/Users/HP HOME/Documents/Página web código y ejemplo/index/Crayolas.png");
+    background-position-y:26px;
+    background-position-x: 19px;
+    border-radius: 30px;
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+  }
+  header nav a {
+      color: darkred;
+      text-decoration: none;
+      margin: 10px;
+  }
+  h2 {
+    font-family: "Coral Pixels", serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  h2 .titulo {
+    background: linear-gradient(to right, red, orange, gold, limegreen, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  h2 .emoji {
+    -webkit-text-fill-color: initial;
+  }
+  label {
+    font-family: "Coral Pixels", serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(to right, red, orange, gold, limegreen, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .danza-lienzo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  canvas {
+    background: white;
+    border: 6px solid black;
+    border-radius: 20px;
+    cursor: crosshair;
+    margin-left: 90px;
+  }
+  .danza-panel {
+    width: 350px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 6px solid;
+    border-radius: 20px;
+  }
+  .danza-colores {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    margin-right: 30px;
+  }
+  .danza-color {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid #444;
+    cursor: pointer;
+  }
+  .danza-botones {
+    padding-top: 10px;
+  }
+  .danza-botones button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+  }
+  .danza-botones button:hover {
+    background: #555;
+  }
+  input[type="range"], select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .palette-buttons button {
+    width: 30%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  #backButton {
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    font-family: "Coral Pixels", serif;
+    background-color: black;
+    background: linear-gradient(to right, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid red;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 40px;
+  }
+  #backButton:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  button {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <button id="backButton" onclick="history.back()"><a href="C:\Users\HP HOME\Documents\Página web código y ejemplo\menú\menú colores\colores menú.html">Atrás</a></button>
+
+  <div class="danza-lienzo">
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+  <div class="danza-panel">
+    <h2><span class="emoji">🎨</span> <span class="titulo">Herramientas</span></h2>
+
+    <div class="palette-buttons">
+      <button onclick="setColorPalette('normal')">🎨 Normal</button>
+      <button onclick="setColorPalette('pastel')">🖌️ Pastel</button>
+      <button onclick="setColorPalette('neon')">⚡ Neón</button>
+    </div>
+    
+    <div class="danza-colores" id="colorPalette"></div>
+    <label>Tamaño Pincel</label>
+    <input type="range" id="brushSize" min="1" max="50" value="5">
+
+    <label>Tamaño Borrador</label>
+    <input type="range" id="eraserSize" min="5" max="80" value="20">
+
+    <div class="danza-botones">
+      <button onclick="setMode('brush')">✏️ Pincel</button>
+      <button onclick="setMode('eraser')">🩹 Borrador</button>
+      <button onclick="fillCanvas()">🖌️ Rellenar lienzo</button>
+      <button onclick="toggleCanvasColor()">⚫⚪ Fondo</button>
+      <button onclick="clearCanvas()">🧹 Limpiar</button>
+      <button onclick="undo()">↩️ Deshacer</button>
+      <button onclick="saveImage()">💾 Guardar PNG</button>
+      <button onclick="fillClosedArea()">🪣 Rellenar área cerrada</button>
+    </div>
+
+    <h2><span class="emoji">⭐</span> <span class="titulo">Reto a Dibujar</span></h2>
+    <p id="retoTexto">👉 Reto: dibuja un ...</p>
+    <button onclick="nuevoReto()">🎲 Nuevo Reto</button>
+  </div>
+
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let painting = false;
+let brushColor = "#000000";
+let brushSize = 5;
+let eraserSize = 20;
+let mode = "brush";
+let history = [];
+let backgroundColor = "white";
+
+function saveHistory() {
+  history.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
+  if (history.length > 30) history.shift();
+}
+function startPosition(e) {
+  painting = true;
+  ctx.beginPath();
+  saveHistory();
+  draw(e);
+}
+function endPosition() {
+  painting = false;
+  ctx.beginPath();
+}
+function draw(e) {
+  if (!painting) return;
+  const rect = canvas.getBoundingClientRect();
+  const x = (e.clientX || e.touches?.[0].clientX) - rect.left;
+  const y = (e.clientY || e.touches?.[0].clientY) - rect.top;
+
+  if (mode === "brush") {
+    ctx.lineWidth = brushSize;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = brushColor;
+    ctx.lineTo(x, y);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+  } else if (mode === "eraser") {
+    ctx.clearRect(x - eraserSize/2, y - eraserSize/2, eraserSize, eraserSize);
+  }
+}
+canvas.addEventListener("mousedown", startPosition);
+canvas.addEventListener("mouseup", endPosition);
+canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("touchstart", startPosition);
+canvas.addEventListener("touchend", endPosition);
+canvas.addEventListener("touchmove", draw);
+
+function setMode(m) {
+  mode = m;
+  if (m === "brush") canvas.style.cursor = "crosshair";
+  else if (m === "eraser") canvas.style.cursor = "cell";
+}
+function clearCanvas() {
+  ctx.fillStyle = backgroundColor;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+function fillCanvas() {
+  ctx.fillStyle = brushColor;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+function toggleCanvasColor() {
+  backgroundColor = backgroundColor === "white" ? "black" : "white";
+  clearCanvas();
+}
+function undo() {
+  if (history.length > 0) ctx.putImageData(history.pop(), 0, 0);
+}
+function saveImage() {
+  const link = document.createElement('a');
+  link.download = 'dibujo.png';
+  link.href = canvas.toDataURL();
+  link.click();
+}
+document.getElementById("brushSize").addEventListener("input", e => brushSize = e.target.value);
+document.getElementById("eraserSize").addEventListener("input", e => eraserSize = e.target.value);
+
+const colorPalette = document.getElementById("colorPalette");
+
+const palettes = {
+  normal: [
+    "#000000","#FFFFFF","#FF0000","#00FF00","#0000FF",
+    "#FFFF00","#FF00FF","#00FFFF","#800000","#808000",
+    "#008000","#800080","#808080","#C0C0C0","#FFA500",
+    "#A52A2A","#8B0000","#2E8B57","#4682B4","#DA70D6","#964B00","#FF69B4","#00CED1"
+  ],
+  pastel: [
+    "#FFB3BA","#FFDFBA","#FFFFBA","#BAFFC9","#BAE1FF",
+    "#E0BBE4","#FFDAC1","#F3EAC2","#D5E1DF","#C1F0F6",
+    "#FFD1DC","#E3F9FF","#FFFACD","#B0E0E6","#FFE4E1",
+    "#F0FFF0","#F5F5DC","#FAEBD7","#E6E6FA","#F0F8FF"
+  ],
+  neon: [
+    "#FF6EC7","#FF00FF","#FF1493","#39FF14","#0FFF50",
+    "#00FFFF","#00FFEF","#FF4D00","#FFD300","#FF073A",
+    "#7DF9FF","#39FF14","#FF7F50","#F0FF00","#FF00A1",
+    "#8CFF00","#FF0F0F","#0FF0FF","#FF69B4","#FF4500"
+  ]
+};
+
+function setColorPalette(type) {
+  colorPalette.innerHTML = '';
+  palettes[type].forEach(c => {
+    const div = document.createElement("div");
+    div.className = "danza-color";
+    div.style.background = c;
+    div.onclick = () => { brushColor = c; setMode("brush"); };
+    colorPalette.appendChild(div);
+  });
+}
+setColorPalette('normal');
+
+function fillClosedArea() {
+  mode = "fillArea";
+  canvas.style.cursor = "crosshair";
+
+  function fillHandler(e) {
+    const rect = canvas.getBoundingClientRect();
+    const x = Math.floor((e.clientX || e.touches?.[0].clientX) - rect.left);
+    const y = Math.floor((e.clientY || e.touches?.[0].clientY) - rect.top);
+
+    floodFill(ctx, x, y, hexToRgba(brushColor));
+    canvas.removeEventListener("click", fillHandler);
+    canvas.removeEventListener("touchstart", fillHandler);
+    setMode("brush");
+  }
+
+  canvas.addEventListener("click", fillHandler);
+  canvas.addEventListener("touchstart", fillHandler);
+}
+
+function hexToRgba(hex) {
+  hex = hex.replace('#','');
+  if (hex.length === 3) hex = hex.split('').map(h=>h+h).join('');
+  const bigint = parseInt(hex,16);
+  return [ (bigint >> 16) & 255, (bigint >> 8) & 255, bigint & 255, 255 ];
+}
+
+function floodFill(ctx, startX, startY, fillColor) {
+  const w = ctx.canvas.width;
+  const h = ctx.canvas.height;
+  const imgData = ctx.getImageData(0,0,w,h);
+  const data = imgData.data;
+  const getColor = (x,y) => {
+    const idx = (y*w + x)*4;
+    return [data[idx], data[idx+1], data[idx+2], data[idx+3]];
+  };
+  const setColor = (x,y,color) => {
+    const idx = (y*w + x)*4;
+    [0,1,2,3].forEach(i=>data[idx+i]=color[i]);
+  };
+  const matchColor = (c1,c2) => c1.every((v,i)=>v===c2[i]);
+  const targetColor = getColor(startX,startY);
+  if(matchColor(targetColor,fillColor)) return;
+  const stack = [[startX,startY]];
+  while(stack.length>0) {
+    const [x,y] = stack.pop();
+    if(x<0 || x>=w || y<0 || y>=h) continue;
+    if(!matchColor(getColor(x,y),targetColor)) continue;
+    setColor(x,y,fillColor);
+    stack.push([x+1,y],[x-1,y],[x,y+1],[x,y-1]);
+  }
+  ctx.putImageData(imgData,0,0);
+}
+
+// === Reto a dibujar ===
+const palabrasReto = [
+  "sol","luna","estrella","árbol","flor","perro","gato","pez","pájaro","mariposa",
+  "casa","carro","avión","barco","tren","bicicleta","pelota","cometa","robot","cohete",
+  "nube","montaña","río","playa","isla","castillo","reloj","corazón","manzana","plátano",
+  "sandía","helado","pastel","pan","leche","zapato","sombrero","camisa","pantalón","mochila",
+  "silla","mesa","puerta","ventana","lápiz","libro","televisión","computadora","dragón","dinosaurio"
+];
+
+function nuevoReto() {
+  const palabra = palabrasReto[Math.floor(Math.random()*palabrasReto.length)];
+  document.getElementById("retoTexto").innerText = "👉 Reto: dibuja un " + palabra;
+}
+</script>
+</body>
+</html>

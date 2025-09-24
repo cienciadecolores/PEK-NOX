@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negritos</title>
+    <style>
+        /* Estilos básicos */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        body {
+        background-image: url("C:/Users/USUARIO/OneDrive/Imágenes/Página web código y ejemplo/Imágenes página web/maxresdefault (1) (4).jpg"); /* Aquí colocas la ruta de tu imagen */
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+        }
+        header {
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/011/699/797/non_2x/red-shiny-space-fire-particle-powder-looping-flow-for-abstract-art-fantasy-motion-silver-background-free-photo.jpg);
+    transition: background-image 1s ease, transform 1s ease, box-shadow 1s ease;
+        }
+header:hover {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/007/650/493/original/red-particles-fire-falling-down-on-black-background-video.jpg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        h1 {
+            margin: 0;
+            font-size: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 5s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.05);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+        h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+h2:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h2 {
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.05);
+            transform-origin: center;
+        }
+        h1 {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NEGRITOS</h1>
+</header>
+<style>
+    .lol {
+        width: 300px;
+        position: relative;
+        left: 100px;
+    }
+    .ka {
+        position: relative;
+        left: 20px;
+}
+img {
+    border-radius: 25px;
+    border: 20px solid darkred;
+}
+</style>
+<section>
+    <h2 class="ka">TRAJE TÍPICO MÁS RECONOCIDO DE LOS NEGRITOS</h2>
+    <div class="imagen-danza">
+        <img class="lol" src="https://impresa.lapatria.bo/fotos/03_2014/174804_1_01.jpg" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+    </div>
+</section>
+<style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .section {
+            padding: 50px 10%;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        /* Sección con texto e imágenes */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .content img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Eliminar margen */
+        }
+
+        .content.text-left img {
+            order: 1;
+            margin-left: 20px;
+        }
+
+        .content.text-right img {
+            order: 2;
+            margin-right: 20px;
+        }
+
+        .text {
+    width: 50%;
+    padding: 0 40px; /* Reducir el padding */
+        }
+
+        .text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+    background-image: url(https://img.freepik.com/vector-premium/fondo-gradiente-oscuro-sombreado-negro-gris-transicion-radial-suave-foco-luz-central_213497-4511.jpg);
+    padding: 20px; /* Reducir el padding */
+    border-radius: 20px;                }
+
+        /* Estilos específicos de cada sección */
+        .characters .content:nth-child(odd) {
+            flex-direction: row-reverse;
+            margin: auto 0;
+        }
+
+        .characters .content:nth-child(even) {
+            flex-direction: row;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .content img, .text {
+                width: 100%;
+            }
+
+            .content img {
+                margin: 0 0 20px 0;
+            }
+        }
+        .ok {
+            background-color: darkred;
+            border-radius: 20px;
+        }
+        p {
+            transition: transform 0.3s;
+        }
+        p:hover {
+    transform: scale(1.05);
+        }
+        .section {
+    padding: 40px 5%; /* Reducir padding de las secciones */
+}
+img:hover {
+    transform: scale(1.03);
+}
+img {
+    transition: 0.5s;
+}
+
+p {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+</style>
+</head>
+<body>
+
+    <!-- Sección Historia -->
+    <section class="section history">
+        <h2 class="ok">Historia</h2>
+        <div class="content text-left">
+            <img src="https://comercioyjusticia.info/wp-content/uploads/2021/11/esclavitud.jpg" alt="Historia de la Diablada">
+            <div class="text">
+                <p>
+                    La danza de los Negritos tiene sus raíces en la época colonial, cuando los esclavos africanos fueron traídos a América, incluidos los Andes. La danza nació como una expresión de las experiencias y sufrimientos de los esclavos, así como de su resistencia y adaptación cultural. Originalmente, era una forma de burla a los patrones españoles y de imitación satírica de los europeos, pero también servía para mantener vivas sus propias tradiciones africanas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Representación -->
+    <section class="section representation">
+        <h2 class="ok">Representación</h2>
+        <div class="content text-right">
+            <img src="https://agendaestadodederecho.com/wp-content/uploads/2024/02/12-Esclavitud-en-el-siglo-XXI_-La-brecha-entre-el-derecho-internacional-y-la-realidad.jpg" alt="Representación de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Negritos representa la resistencia y la lucha por la libertad de los esclavos africanos traídos a los Andes durante la colonia. A través de sus movimientos, trajes y máscaras, simboliza tanto el sufrimiento como la resiliencia de los afrodescendientes. También es una burla satírica a los patrones coloniales, imitando sus formas y costumbres, mientras se mantiene un fuerte vínculo con las raíces culturales africanas. La danza es una celebración de la libertad, el orgullo y la mezcla cultural entre africanos, indígenas y mestizos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personajes -->
+    <section class="section characters">
+        <h2 class="ok">Personajes</h2>
+        
+        <!-- Personaje 1 -->
+        <div class="content text-left">
+            <img src="https://www.ibolivia.org/wp-content/uploads/2019/07/danza-negritos-bolivia.jpg" alt="Personaje 1">
+            <div class="text">
+                <p>
+                    Caporal: El Caporal es el líder de la danza de los Negritos, representando al capataz que supervisaba a los esclavos durante la época colonial. Vestido con un traje llamativo, sombrero y látigo, su papel simboliza la autoridad y el control que ejercía sobre los esclavos. En la danza, su figura es una mezcla de poder y sátira, ya que a menudo se exagera su carácter autoritario como una forma de burla y crítica hacia la opresión.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 2 -->
+        <div class="content text-right">
+            <img src="https://anteriorportal.erbol.com.bo/sites/default/files/img_noticias/tundique-negritos-danza.jpg" alt="Personaje 2">
+            <div class="text">
+                <p>
+                    Negro: En la danza de los Negritos, el personaje del "Negro" representa a los esclavos africanos, simbolizando su lucha, sufrimiento y resistencia. Vestido con trajes coloridos y máscaras que reflejan su herencia cultural, este personaje es fundamental para la danza, ya que transmite la historia y la memoria de los afrodescendientes en Bolivia. A través de sus movimientos, el "Negro" expresa alegría y orgullo, convirtiendo el sufrimiento del pasado en una celebración de identidad y libertad.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRddVXCfGpRXC4ySnIkLBmBwJdFNCzqj7EUTw&s" alt="Personaje 3">
+            <div class="text">
+                <p>
+                   Negritas: Las Negritas son personajes femeninos que representan a las mujeres afrodescendientes en la danza de los Negritos. Vestidas con trajes coloridos y adornados, simbolizan la fortaleza, la belleza y la cultura de las mujeres en la comunidad afroboliviana. Su presencia en la danza destaca el papel vital de las mujeres en la vida familiar y social, así como su contribución a la preservación de las tradiciones culturales. A través de sus movimientos alegres y expresivos, las Negritas celebran la identidad afrodescendiente y la resiliencia de su comunidad.
+                </p>
+            </div>
+        </div>
+            <div class="content text-right">
+            <img src="https://impresa.lapatria.bo/fotos/03_2011/61110_1_05.jpg" alt="Personaje 4">
+            <div class="text">
+                <p>
+                   Sibaritas: En la danza de los Negritos, los Sibaritas son personajes que representan a las élites coloniales o mestizas, simbolizando la opulencia y el estilo de vida de los privilegiados durante la época colonial. Vestidos con trajes elegantes y elaborados, los Sibaritas aportan un contraste a los personajes afrodescendientes, reflejando la jerarquía social de la época. Su papel en la danza es a menudo humorístico y satírico, ya que imitan y exageran las costumbres de las clases altas, lo que permite criticar la desigualdad social y resaltar la resistencia cultural de los afrodescendientes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Personaje 3 -->
+        <div class="content text-left">
+            <img src="https://i.ytimg.com/vi/sHIYs4A0k8A/maxresdefault.jpg" alt="Personaje 5">
+            <div class="text">
+                <p>
+                  Españolas: En la danza de los Negritos, las Españolas representan a las mujeres de la élite colonial. Vestidas con trajes elaborados y elegantes, simbolizan la opulencia y el estatus de las clases altas en la sociedad colonial. Su papel en la danza a menudo incluye movimientos graciosos y actitudes que reflejan la frivolidad y la superficialidad de la aristocracia de la época. A través de esta representación, se critican las desigualdades sociales y se enfatiza la resistencia cultural de los afrodescendientes, creando un contraste entre las distintas clases y sus experiencias en la sociedad colonial.
+                </p>
+            </div>
+        </div>
+<div class="content text-right">
+            <img src="https://impresa.lapatria.bo/fotos/03_2014/174804_4_01.jpg" alt="Personaje 6">
+            <div class="text">
+                <p>
+                   Músicos: En la danza de los Negritos, los Músicos son los encargados de interpretar las melodías que acompañan la representación, utilizando instrumentos tradicionales como la guitarra, el violín y la zampoña. Su papel es crucial, ya que la música establece el ambiente festivo y energiza a los bailarines. Los Músicos simbolizan la herencia cultural afroandina, fusionando ritmos africanos con influencias indígenas y mestizas. A través de su interpretación, contribuyen a la celebración de la identidad afrodescendiente y la resistencia cultural, haciendo de la danza una experiencia vibrante y conmovedora.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Simbología -->
+    <section class="section symbolism">
+        <h2 class="ok">Simbología</h2>
+        <div class="content text-right">
+            <img src="https://i.ytimg.com/vi/wUzGD9xWZyA/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGGUgZShlMA8=&rs=AOn4CLDi70rxRM5tfRK-hP4mWgNOdRQeSQ" alt="Simbología de la Diablada">
+            <div class="text">
+                <p>
+                   La danza de los Negritos simboliza la resistencia, la identidad cultural y la lucha por la libertad de los afrodescendientes en Bolivia. A través de sus movimientos, trajes y personajes, se rinde homenaje a la historia de los esclavos africanos, reflejando tanto su sufrimiento como su resiliencia. La danza también representa la crítica a las jerarquías sociales y la opresión colonial, utilizando la sátira para exponer las desigualdades de la época.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Música -->
+    <section class="section music">
+        <h2 class="ok">Música</h2>
+        <div class="content text-left">
+            <img src="https://www.opinion.com.bo/asset/thumbnail,992,558,center,center/media/opinion/images/2022/11/14/2022111422280893824.jpg" alt="Música de la Diablada">
+            <div class="text">
+                <p>
+                    Los temas musicales que representan la danza de los Negritos suelen incluir ritmos festivos y melodías tradicionales que reflejan la herencia afroandina. Algunos de los temas más destacados son:
+
+"El Negrito" - Una canción que celebra la danza y la cultura afrodescendiente.
+"La Cumbia de los Negritos" - Un ritmo alegre que captura la esencia festiva de la danza.
+"Canto a la Libertad" - Una melodía que evoca la lucha y el anhelo de libertad de los afrodescendientes.
+"El Baile del Negrito" - Un tema popular que acompaña las danzas, resaltando la alegría y la celebración de la identidad.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+    .folkloric-groups {
+    padding: 40px 10%;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/78/29/b0/7829b07e1d5a99dc9f2a080dd6f7eb6d.jpg); /* Fondo blanco para destacar */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.folkloric-groups h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+    transition: 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+li {
+    transition: transform 4s;
+}
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.folkloric-list li:hover {
+    color: #d32f2f; /* Cambiar color al pasar el mouse */
+}
+a {
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    text-decoration: none; /* Elimina la subrayado */
+}
+.folkloric-list {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0;
+    text-align: center; /* Centrar texto */
+}
+
+.folkloric-list li {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.icon {
+    width: 40px; /* Ajustar tamaño de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin-right: 10px; /* Espacio entre imagen y texto */
+    border-color: transparent;
+}
+</style>
+</body>
+</html>
